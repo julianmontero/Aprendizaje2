@@ -1,0 +1,1 @@
+echo "archivo de configuración"
