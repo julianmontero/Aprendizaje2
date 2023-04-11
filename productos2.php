@@ -1,1 +1,0 @@
-echo "Nuevos productos2";
