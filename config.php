@@ -19,12 +19,7 @@
 
     // define('DEBUG_SQL',true);
      
-/* 
- $db_host="localhost";
-       $db_nombre="aprendi1_libros";
-       $db_usuario="aprendi1";
-       $db_clave="goku420vegeta";
-	*/   
+
          
         $db_host="localhost";
         $db_nombre="Aprendizaje_Activo";
