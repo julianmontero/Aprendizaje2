@@ -5,7 +5,6 @@
         $conexion=mysqli_connect($db_host,$db_usuario,$db_clave,$db_nombre);
  
         mysqli_close($conexion); 
+        echo "ventas";
 
 ?>
-
-echo "ventas";

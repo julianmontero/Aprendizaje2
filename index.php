@@ -1,3 +1,7 @@
-echo "Hola Mundo";
 <?php
-		require TEMPLATE_PATH.'/config.php';?>
+		require TEMPLATE_PATH.'/config.php';
+		
+		echo "Hola Mundo";
+		
+		
+		?>

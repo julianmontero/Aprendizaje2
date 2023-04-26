@@ -1,2 +1,8 @@
-echo "clientes";
-echo "clientes";
+
+<?php
+		require TEMPLATE_PATH.'/config.php';
+		
+		echo "Hola Mundo";
+		echo "clientes";
+		
+		?>
