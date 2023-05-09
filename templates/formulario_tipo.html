@@ -1,0 +1,136 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name= "Descripción" content="Encuesta"/>
+
+<title>Autoevaluación Comercialización I</title>
+
+<script type="text/JavaScript" src="javascript/validar.js"></script>
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head>
+
+<body>
+<div id="contenedor">
+
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+
+<div id="principal">
+    
+    <h1>Cuestionario: Tipo de Preguntas</h1>
+ 
+    
+<FORM name="f3" method="POST" action="index.php?pagina=viaje_san_isidro_resultados">
+    <h2>1-Preguntas Abiertas</h2>
+    <h3>1.1-Preguntas abiertas básicas</h3>
+    <fieldset>
+    <legend> <font face="Arial" color="orange">1.1</font></legend>
+ <label for="Comentarios">¿Qué técnicas de estudio utiliza habitualmente?</label>
+          <textarea  name="Comentarios" rows="5" cols="100"></textarea>
+</fieldset><br>
+    <h3>1.2-Preguntas seguimiento</h3>
+        <h4>1.2.1-Preguntas de profundización</h4>
+        <fieldset>
+    <legend> <font face="Arial" color="orange">1.2.1</font></legend>
+ <label for="Comentarios">¿Cuál de las técnicas mencionadas es su preferida?</label>
+          <textarea  name="Comentarios" rows="5" cols="100"></textarea>
+</fieldset><br>
+        <h4>1.2.2-Preguntas de clarificación</h4>
+    
+    
+    
+    <h2>2-Preguntas Cerradas</h2>
+    <h3>2.1-Dicotómicas</h3>
+    <fieldset>
+        <legend> <font face="Arial" color="orange">2.1</font></legend>
+        <label>¿Estudia de memoria?</label><br>
+
+    <label>Sí<input type="radio" name="forma" value="si" /></label> <br>
+<label>No<input type="radio" name="forma" value="no"/></label></fieldset><br><br>
+
+<h3>2.2-Respuestas Múltiples</h3><br>
+<fieldset>
+    <legend> <font face="Arial" color="orange">2.2</font></legend> 
+¿Qué técnicas de estudio utiliza habitualmente?<br>
+ <label><input type="checkbox" name="6-1" value="6-1"/> Resumen </label><br/>
+ <label><input type="checkbox" name="6-2" value="6-2"/> Esquemas </label><br/>
+ <label><input type="checkbox" name="6-3" value="6-3"/> Mapas conceptuales </label><br/>
+ <label><input type="checkbox" name="6-4" value="6-4"/> Recitado </label><br/>
+ <label><input type="checkbox" name="6-4" value="6-4"/> Mnemotecnia </label><br/>
+</fieldset><br/><br/>
+
+<h3>2.3-Escalas unipolares</h3><br>
+
+<fieldset>
+    <legend> <font face="Arial" color="orange">2.3</font></legend>
+
+<label>¿Qué expresión define mejor su experiencia con?</label><br>
+
+<input type="radio" name="3" value="1">Excelente<br/>
+<input type="radio" name="3" value="2">Muy bueno<br/>
+<input type="radio" name="3" value="3">Bueno<br/>
+<input type="radio" name="3" value="4">Regular<br/>
+<input type="radio" name="3" value="5">Malo<br/>
+<input type="radio" name="3" value="6">Muy Malo<br/>
+<input type="radio" name="3" value="7">Extremadamente Malo<br/></fieldset><br>
+
+<h3>2.4-Escalas bipolares</h3><br>
+
+<h3>2.5-Escalas hedonistas</h3><br>
+<fieldset>
+    <legend> <font face="Arial" color="orange">2.3</font></legend>
+
+<label>¿Qué expresión define mejor su experiencia con?</label><br>
+
+<input type="radio" name="3" value="1">Excelente<br/>
+<input type="radio" name="3" value="2">Muy bueno<br/>
+<input type="radio" name="3" value="3">Bueno<br/>
+<input type="radio" name="3" value="4">Regular<br/>
+<input type="radio" name="3" value="5">Malo<br/>
+<input type="radio" name="3" value="6">Muy Malo<br/>
+<input type="radio" name="3" value="7">Extremadamente Malo<br/></fieldset><br>
+<h3>2.6-Escalas de intención de compra</h3><br>
+<h3>2.7-Preguntas de ordenamientos de rango</h3><br>
+
+<fieldset>
+    <legend> <font face="Arial" color="orange">Datos personales</font></legend>
+<input type="hidden" name="a" value="Apellido:">
+    <label for="Apellido">Apellido</label>
+          <input type="text" name="Apellido" value="" />
+      <input type="hidden" name="b" value=";nombre:">
+          <label for="nombre">     Nombre</label>
+          <input type="text" name="nombre" value="" /><br><br>
+<input type="hidden" name="c" value=";Sexo:">
+<label>Sexo:</label><br>
+
+<label>Masculino<input type="radio" name="genero" value="masculino" /> </label><br> 
+<label>Femenino <input type="radio" name="genero" value="femenino"/> </label><br><br>
+
+
+<input type="hidden" name="d" value=";Edad:">
+<label for="Edad">Edad</label>
+          <input name="Edad" type="text" size="4" maxlength="2" id="edad" />
+<br><br>
+<input type="hidden" name="e" value=";Carrera:">
+¿Qué carrera estas cursando?
+<select name="carrera">
+<option value="" selected> ... </option>
+<option value="Hotelería"> Hotelería </option>
+<option value="Turismo" > Turismo </option>
+<option value="Guía de turismo"> Guía de turismo </option>
+<option value="Organización de Eventos"> Organización de Eventos </option>
+</select> </fieldset>
+<br>
+          <br>
+          <center>	<input type="submit" value="Enviar" /> </center>
+</FORM>
+    <br><br>
+    
+</div>
+</body>
+</html>

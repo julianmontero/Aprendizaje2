@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45657116-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-45657116-1');
+</script>
+	
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<title>Aprendizaje Activo</title>
+
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+  <script src="morris/morris.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.js"></script>
+  <script src="morris/lib/example.js"></script>
+  <link rel="stylesheet" href="morris/lib/example.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.css">
+  <link rel="stylesheet" href="morris/morris.css">
+  <style>
+    body { background:#ccc; }
+  </style>
+	
+</head>
+<body>
+	<div class="container">
+  <header class="main-header">
+    <div class="primary_header">
+      <a href="index.php"><span><h1 class="title">Aprendizaje Activo</h1></span></a>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <?php
+		require TEMPLATE_PATH.'/menu.php';?>
+        
+    </nav>
+  </header>
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    
+    <article class="left_article">
+	
+	
+	
+	
+	
+	
+<h1>Donut Chart</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+Morris.Donut({
+  element: 'graph',
+  data: [
+    {value: 70, label: 'foo'},
+    {value: 15, label: 'bar'},
+    {value: 10, label: 'baz'},
+    {value: 5, label: 'A really really long label'}
+  ],
+  backgroundColor: '#ccc',
+  labelColor: '#060',
+  colors: [
+    '#0BA462',
+    '#39B580',
+    '#67C69D',
+    '#95D7BB'
+  ],
+  formatter: function (x) { return x + "%"}
+});
+</pre>
+		  </article>
+    
+  </section>
+</body>

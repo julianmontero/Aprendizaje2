@@ -1,0 +1,83 @@
+<meta name= "Descripción" content="Periodo de recupero"/>
+<meta name="keywords" content="periodo de recupero, payback, recuperación de la inversión">
+<title>Periodo de recupero de la inversión</title>
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head>
+
+
+<body>
+    
+
+<div id="contenedor">
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+<div id="principal">
+	<h1>Periodo de recupero de la inversión</h1> <br /><br />
+	
+        Se denomina punto de equilibrio o de nivelación al volumen de ventas que permite cubrir el total de los costos, 
+        es decir, a partir de dicho nivel de ventas la empresa comienza a generar utilidades.<br>
+Para estimar el punto de equilibrio es necesario conocer los <a href="index.php?pagina=costos_fijos_variables" title="Ver más">costos fijos</a>, los <a href="index.php?pagina=costos_fijos_variables" title="Ver más">costos variables</a> por unidad y el precio de venta.
+<br>
+El primer paso para determinar el punto de equilibrio de un proyecto es pronosticar los costos fijos y los costos
+variables por unidad.
+Con el pronostico realizado es posible hallar la cantidad de equilibrio analíticamente  al dividir el costo fijo por el precio de venta menos el costo variable por unidad.
+<br><br>
+<center> <img src="imagenes/Punto_equilibrio_formula.jpg" alt="formula para calcular punto de equilibrio" title="Esta formula permite calcular la cantidad unidades
+              de debe vender la empresa para alcanzar el punto de equilibrio"> </center>
+<br>
+
+El ingreso de equilibrio puede hallar multiplicando la cantidad de equilibrio por el precio de venta.<br>
+Gráficamente el punto de equilibrio se halla en la intersección de la curva de ingresos por venta con 
+la curva de costo total. <br>
+Está determinado por un par de coordenadas, la cantidad de producto vendido, 
+que se mide en el eje horizontal  y el ingreso medido en el eje vertical.
+
+<br><br>
+
+<br><br>
+<center> <img src="imagenes/Punto_equilbrio_grafico.jpg" alt="Grafico punto de equilibrio" title="La gráfica muestra
+              el punto de equilibrio en la intersección de la curva de ingreso por ventas y la de costo total."> </center>
+<br>
+
+Si necesitas ayuda para calcular y gráficar el punto de equilibrio, podes usar el 
+<a href="index.php?pagina=punto_equilibrio_grafico_excel">tutorial</a>
+<br><br>
+
+<br>
+
+Punto de equilibrio para más de un producto 
+<a href="index.php?pagina=punto_equilibrio_varios_productos">ver</a>
+<br><br>
+
+Bibliografía:<br>
+Mocciaro, Osvaldo A. (1992). Presupuesto integrado. 1ra Macchi Buenos Aires
+<br><br>
+<FORM name="f3" method="POST" action="index.php?pagina=viaje_san_isidro_resultados">
+<input type="hidden" name="a" value="punto_equilibrio;">
+¿Este contenido te ha sido útil?
+<select name="Utilidad">
+<option value="Muy útil" selected>Muy útil</option>    
+<option value="Útil" selected> Útil</option>
+<option value="Algo útil">Algo útil </option>
+<option value="No, es confuso" >No, es confuso </option>
+</select>
+<br><br>
+
+<input type="hidden" name="n" value=";Comentarios:;">
+<fieldset>
+    <legend> <font face="Arial" color="#FF0033"> Nos gustaría conocer tu opinión para ofrecerte una mejor experiencia </font></legend>
+ <label for="Comentarios"></label>
+          <textarea  name="Comentarios" rows="5" cols="100"></textarea>
+</fieldset>
+          <br>
+          <center>	<input type="submit" value="Enviar" /> </center>
+</FORM>
+<br><br>
+
+</div><!--principal-->

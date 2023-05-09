@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name= "Descripción" content="Autoevaluación marketing, autoevaluación Comercialización, 
+                participación activa"/>
+
+<title>Autoevaluación Comercialización I</title>
+</head>
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+<div id="contenedor">
+<body>
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+<div id="principal">
+<h1>Autoevaluación Comercialización 1</h1>
+
+
+<h2>Introducción a la comercialización</h2><br/>
+
+<FORM name="f3" method="POST" action="index.php?pagina=autoevaluacion_resultado_1">
+<input type="hidden" name="0" value="Intro_marketing">	
+<label for="Apellido">Apellido</label>
+          <input type="text" name="Apellido" value="" />
+      
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" value="" /><br /><br/>
+          
+          <label for="edad">Edad</label>
+          <input type="text" name="edad" value="" /><br /><br/>
+          
+          <label for="edad2">Edad</label>
+          <input type="text" name="edad2" value="" /><br /><br/>
+
+
+	<label>1- El marketing es una función organizacional y un sistema de procesos para:</label><br/>
+	
+        <input type="radio" name="1" value="2">acción<br/>
+	<input type="radio" name="1" value="-1">acción-análisis<br/>
+	<input type="radio" name="1" value="-1">acción-análisis-cultura<br/>
+	<input type="radio" name="1" value="-1">análisis-acción-análisis<br/><br/>
+          <label>1- El marketing operativo incluye:</label><br/>
+	
+        <input type="radio" name="2" value="2">acción<br/>
+	<input type="radio" name="2" value="-1">acción-análisis<br/>
+	<input type="radio" name="2" value="-1">acción-análisis-cultura<br/>
+	<input type="radio" name="2" value="-1">análisis-acción-análisis<br/><br/>
+        
+        <label>2- El marketing estratégico incluye</label><br/>
+	<input type="radio" name="3" value="-1">acción<br/>
+	<input type="radio" name="3" value="2">acción-análisis<br/>
+	<input type="radio" name="3" value="-1">acción-análisis-cultura<br/>
+	<input type="radio" name="3" value="-1">análisis-acción-análisis<br/><br/>
+        
+        
+	<input type="submit" value="Enviar autoevaluación" />
+</FORM>
+</div><!--principal-->
+</body>
+</html>

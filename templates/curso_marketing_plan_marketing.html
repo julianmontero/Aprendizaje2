@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan de Marketing</title>
+<meta name= "Description" content="como hacer un plan de marketing, sus partes y etapas, complementos y ayudas"/>
+<meta name="keywords" content="plan de marketing, planificación comercial, plan de comercialización ">
+     
+	
+	
+	<link href="css/acordeon.css" rel="stylesheet" type="text/css">
+
+    
+    <link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+
+ 
+    <script src="scripts/jquery-3.3.1.min.js" type="text/javascript"></script>	
+    <script src="scripts/jquery.js" type="text/javascript"></script>	
+    
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+    	<style type="text/css">
+		*{ font-family: sans-serif; margin: 0;}
+		dl{ margin: 60px auto; width: 600px; }
+		dt, dd{ padding: 20px; }
+		dt{ background: #333333; color: white; border-bottom: 1px solid #141414; border-top: 1px solid #4E4E4E; cursor: pointer; }
+		dd{ background: #F5F5F5; display: none; line-height: 1.6em; }
+		dt.activo, dt:hover{ background: #424242; }
+
+		dt:before{ content: "▸"; margin-right: 10px; }
+		dt.activo:before{ content: "▾"; }
+	</style>
+</head>
+<body>
+<div class="container">
+<header class="main-header">
+    <div class="primary_header">
+      <a href="index.php"><span><h1 class="title">Aprendizaje Activo</h1></span></a>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <?php
+		require TEMPLATE_PATH.'/menu_comer1_home.php';?>
+        
+    </nav>
+  </header>
+  <section>
+       <article class="left_article">
+  <h3>Plan de Marketing: Estructura sugerida y Herramientas</h3>
+      
+      <p>El plan de marketing se ubica en el nivel más alto de la planificación comercial y supone un curso de acción que le permitirá a la organización alcanzar sus objetivos estratégicos.<br>
+Se propone una estructura sugerida ya que no existe una formula para el éxito. Se puede decir que existen tantas estructuras cómo empresas.<br>
+  A modo de reflexión pensemos en un commoditie, por ejemplo la soja, que tiene una cotización conocida en el mercado financiero. 
+
+Este producto por tratarse de un commoditie y tener una cotización conocida en un mercado internacional, no necesita realizar un plan de marketing. Todo lo producido se puede vender en el mercado.<br>
+
+
+Ahora consideremos, otro caso. Por ejemplo el plan de marketing que debe elaborar una empresa que produce y vende indumentaria. 
+
+
+En oposición a la soja, este tipo de productos se encuentran altamente diferenciados y tiene una gran dispersión de precios desde las marcas más prestigiosas hasta las menos conocidas. 
+
+Resulta evidente que toda empresa en el rubro de la indumentaria deberá desarrollar un plan de marketing muy elaborado, detallando el marketing estratégico hasta el marketing táctico incluyendo un plan de monitoreo y control.</p>
+		   
+		   
+		   
+		   
+     <dl>
+		<dt>Auditoria de Mercado: La búsqueda de oportunidades</dt>
+		<dd>
+         <ul>
+            <li>Análisis de situación
+			 <a href="index.php?pagina=curso_comercializacion_1_Investigacion" target="_blank">Investigación de Mercado</a>
+			 
+			 
+			 
+			 </li>
+            <li>Objetivos</li>
+            </ul>
+         </dd>
+
+		<dt>Marketing Estratégico</dt>
+		<dd><ul>
+            <li><a href="index.php?pagina=curso_comercializacion_1_Segmentacion_mercado" target="_blank">Segmento y necesidad meta</a></li>
+            <li>Mercado</li>
+            <li>Aspectos Legales</li>
+            <li>
+			
+			
+			<a href="index.php?pagina=curso_comercializacion_1_posicionamiento_marca" target="_blank">Estrategia y Posicionamiento</a>
+			</li>
+            </ul>
+         </dd>
+
+		<dt>Marketing Táctico</dt>
+		<dd>
+         <ul>
+            <li>Productos / Servicios / <a href="index.php?pagina=curso_comercializacion_1_Branding_Marca">Branding</a></li>
+            <li><a href="index.php?pagina=curso_comercializacion_1_Plaza_canales">Plaza, Canales de Distribución</a></li>
+            <li><a href="index.php?pagina=curso_comercializacion_1_Publicidad_promocion" target="_blank">Promoción: Comunicaciones Integrales de Marca</a></li>
+            <li><a href="index.php?pagina=curso_comercializacion_1_Precios" target="_blank">Precios</a></li>
+            </ul>
+         </dd>
+
+		<dt>Acción y Control</dt>
+		<dd>
+           <ul>
+            <li><a href="index.php?pagina=curso_matematica_financiera_flujo_caja" target="_blank">Resultados Financieros</a></li>
+            <li>Análisis de Equilibrio</li>
+            <li>Programación</li>
+            </ul>
+         </dd>
+	</dl>	
+	
+	<script type="text/javascript">
+	   $('dl dd').hide();
+       $('dl dt').click(function(){
+          if ($(this).hasClass('activo')) {
+               $(this).removeClass('activo');
+               $(this).next().slideUp();
+          } else {
+               $('dl dt').removeClass('activo');
+               $(this).addClass('activo');
+               $('dl dd').slideUp();
+               $(this).next().slideDown();
+          }
+       });
+	</script>
+           <p>
+           
+           <a href="archivos/Plan_de_Marketing.pdf" target="_blank" onClick="ga('send', 'event', 'Descarga', 'click', 'Mkt_plan_pdf', 1 );">Descargar Guía para Desarrollar un Plan de Marketing</a> </p>
+   </article>   
+</section>

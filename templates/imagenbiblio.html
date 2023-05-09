@@ -1,0 +1,35 @@
+<div id="cuerpo" style="height:auto;">
+
+			<h1>Album</h1>
+
+			<div id="izquierda">
+
+    			    <?php
+				require TEMPLATE_PATH.'/menu.php';
+			    ?>
+			</div>
+
+			<div id="principal">
+                            <?php
+
+                                $imagenes   =   leerDirectorio(ALBUM2_PATH);
+
+                                if(!sizeof($imagenes)){
+
+                                    echo "<h2>No hay imagenes para mostrar</h2>";
+
+                                }else{ // Si hay imagenes ...
+
+                                    foreach($imagenes as $imagen){
+                                    
+                                        $imagen =   ALBUM2_PATH.'/'.$imagen;
+                                        echo '<a href="'.$imagen.'">';
+                                        echo '<img width="128" src="'.$imagen.'" />'."\n";
+                                        echo '</a>';
+                                    }
+
+                                }
+                            ?>
+			</div>
+
+		</div><!-- cuerpo -->

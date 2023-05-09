@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name= "Description" content="Curso de Comercialización y ventas para turismo y hoteleria, material de apoyo, bibliografía, autoevaluación"/>
+<meta name="keywords" content="marketing, comercializacion 1,Curso comercialización, Curso marketing, aprender marketing, fijacion de precios, branding, publicidad, promoción">
+<title>Comercialización y ventas 2</title>
+
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link href="css/tablas.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head><!--Curso Comercialización y Ventas 1-->
+<body>
+<div class="container">
+ <header class="main-header">
+    <div class="primary_header">
+      <a href="index.php"><span><h1 class="title">Aprendizaje Activo</h1></span></a>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <?php
+		require TEMPLATE_PATH.'/menu_comer2_home.php';
+		?>
+    </nav>
+  </header>
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    
+    <article class="left_article">
+        <h3> Curso Comercialización y Ventas 2</h3><hr/>
+
+
+		<p>Bienvenidos! en el menú superior podrás ver y navegar por las diferentes unidades de la asignatura.<br>
+			En las siguiente tabla encontrarás el calendario de evaluación y luego links a las presentaciones de clase, formularios de autoevaluación.
+		<br>	<b>Muchos éxitos para este cuatrimestre!!!
+			</b>
+			
+			
+			</p><br><br>
+ 
+<table class="tabla" summary="Tabla genérica">
+  <tr>
+    <th colspan="3">Calendario Curso Asincrónico</th>
+    </tr>
+	<tr>
+    <td> 1er Trabajo práctico</td>
+    <td>9 de septiembre</td>
+     <td>
+  
+<? 
+//fecha fin (sin ceros delante y las horas en formato 24 h)
+$hora = 21;
+$dia = 9;
+$mes = 9;
+$ano = 2022;
+
+$fin = mktime($hora,0,0,$mes,$dia,$ano);
+$hoy = mktime(date('H,0,0,m,d,Y'));
+
+$cuenta_atras = floor(($fin - $hoy) / 86400);
+
+if($cuenta_atras <= 0){
+$cuenta_atras = 0;
+} 
+
+echo "Faltan ". $cuenta_atras . " días.";
+?>
+     	
+    </td>
+    </tr>
+  <tr>
+    <td> 1er Parcial</td>
+    <td>2 de octubre</td>
+     <td>
+  
+<? 
+//fecha fin (sin ceros delante y las horas en formato 24 h)
+$hora = 23;
+$dia = 2;
+$mes = 10;
+$ano = 2022;
+
+$fin = mktime($hora,0,0,$mes,$dia,$ano);
+$hoy = mktime(date('H,0,0,m,d,Y'));
+
+$cuenta_atras = floor(($fin - $hoy) / 86400);
+
+if($cuenta_atras <= 0){
+$cuenta_atras = 0;
+} 
+
+echo "Faltan ". $cuenta_atras . " días.";
+?>
+     	
+    </td>
+    </tr>
+	<tr>
+    <td> 2do Trabajo práctico</td>
+    <td>20 de noviembre</td>
+     <td>
+  
+<? 
+//fecha fin (sin ceros delante y las horas en formato 24 h)
+$hora = 23;
+$dia = 20;
+$mes = 11;
+$ano = 2022;
+
+$fin = mktime($hora,0,0,$mes,$dia,$ano);
+$hoy = mktime(date('H,0,0,m,d,Y'));
+
+$cuenta_atras = floor(($fin - $hoy) / 86400);
+
+if($cuenta_atras <= 0){
+$cuenta_atras = 0;
+} 
+
+echo "Faltan ". $cuenta_atras . " días.";
+?>
+     	
+    </td>
+    </tr>
+    <tr>
+    <td>2do Parcial</td>
+    <td>27 de noviembre</td>
+    <td>
+    	<? 
+//fecha fin (sin ceros delante y las horas en formato 24 h)
+$hora = 23;
+$dia = 27;
+$mes = 11;
+$ano = 2022;
+
+$fin = mktime($hora,0,0,$mes,$dia,$ano);
+$hoy = mktime(date('H,0,0,m,d,Y'));
+
+$cuenta_atras = floor(($fin - $hoy) / 86400);
+
+if($cuenta_atras <= 0){
+$cuenta_atras = 0;
+} 
+
+echo "Faltan ". $cuenta_atras . " días.";
+?>
+    </td>
+    </tr>
+	
+	
+</table>
+<br><br>
+ 		
+		
+		
+		
+ <table class="tabla" summary="Tabla genérica">
+  <tr>
+    <th colspan="2">Archivos del curso</th>
+    </tr>
+  <tr>
+    <td> La guía bibliografica enumera, describe y ordena la secuencia de lectura</td>
+    <td><a href="archivos/cv2_guia_bibliografica.pdf" target="_blank" onClick="ga('send', 'event', 'enlace', 'click', 'cv2_guia_bibliografica', 1 );">descargar guía bibliográfica</a></td>
+    </tr><tr>
+    <td>Con el objetivo de ayudar a la comprensión y orientar la lectura del material bibliografico se ofrece la guía de estudio</td>
+    <td><a href="" target="_blank" onClick="ga('send', 'event', 'enlace', 'click', 'cv2_guiaest', 1 );"><!--descargar guía de estudio--></a></td>
+    </tr>
+</table><br><br>
+
+
+
+<!-- <table class="tabla" summary="Tabla genérica">
+  <tr>
+    <th colspan="3">Calendario</th>
+    </tr>
+  <tr>
+    <td> 1er Parcial</td>
+    <td>04/10</td>
+     <td>
+  
+<? 
+//fecha fin (sin ceros delante y las horas en formato 24 h)
+$hora = 0;
+$dia = 4;
+$mes = 10;
+$ano = 2017;
+
+$fin = mktime($hora,0,0,$mes,$dia,$ano);
+$hoy = mktime(date('H,0,0,m,d,Y'));
+
+$cuenta_atras = floor(($fin - $hoy) / 86400);
+
+if($cuenta_atras <= 0){
+$cuenta_atras = 0;
+} 
+
+echo "Faltan ". $cuenta_atras . " días.";
+?>
+     	
+     </td>
+    </tr>
+    <tr>
+    <td>2do Parcial</td>
+    <td>22/11</td>
+    <td>
+    	<? 
+//fecha fin (sin ceros delante y las horas en formato 24 h)
+$hora = 18;
+$dia = 22;
+$mes = 11;
+$ano = 2017;
+
+$fin = mktime($hora,0,0,$mes,$dia,$ano);
+$hoy = mktime(date('H,0,0,m,d,Y'));
+
+$cuenta_atras = floor(($fin - $hoy) / 86400);
+
+if($cuenta_atras <= 0){
+$cuenta_atras = 0;
+} 
+
+echo "Faltan ". $cuenta_atras . " días.";
+
+?>
+    </td>
+    </tr>
+</table>
+ 
+ <table class="tabla" summary="Tabla genérica">
+  <tr>
+    <th colspan="3">Calendario</th>
+    </tr>
+  <tr>
+    <td> Examen Final</td>
+    <td>04/10</td>
+     <td>
+  
+<? 
+//fecha fin (sin ceros delante y las horas en formato 24 h)
+$hora = 0;
+$dia = 4;
+$mes = 10;
+$ano = 2017;
+
+$fin = mktime($hora,0,0,$mes,$dia,$ano);
+$hoy = mktime(date('H,0,0,m,d,Y'));
+
+$cuenta_atras = floor(($fin - $hoy) / 86400);
+
+if($cuenta_atras <= 0){
+$cuenta_atras = 0;
+} 
+
+echo "Faltan ". $cuenta_atras . " días.";
+?>
+     	
+     </td>
+    </tr>
+    <tr>
+    <td>2do Parcial</td>
+    <td>22/11</td>
+    <td>
+    	<? 
+//fecha fin (sin ceros delante y las horas en formato 24 h)
+$hora = 18;
+$dia = 22;
+$mes = 11;
+$ano = 2017;
+
+$fin = mktime($hora,0,0,$mes,$dia,$ano);
+$hoy = mktime(date('H,0,0,m,d,Y'));
+
+$cuenta_atras = floor(($fin - $hoy) / 86400);
+
+if($cuenta_atras <= 0){
+$cuenta_atras = 0;
+} 
+
+echo "Faltan ". $cuenta_atras . " días.";
+
+?>
+    </td>
+    </tr>
+</table> -->
+
+ <br />
+ <h3>Unidades del cursos y material de estudio</h3><hr/><br />
+ <table class="tabla" summary="Tabla genérica">
+
+     <tr>
+                <th> Unidad</th>
+                <th> Descripción</th>
+                <th> Presentación</th>
+                <th> Autoevaluación</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Unidad 1</td>
+                <td rowspan="2"> Liderazgo y Negociación<br></td>
+                <td><a href="index.php?pagina=liderazgo">Liderazgo</a></td>
+               <td><a href="index.php?pagina=autoevaluacion_c2_01_liderazgo">Hacer</a></td>
+            </tr>
+            <tr>
+               
+				<td><a href="index.php?pagina=curso_negociacion">Negociación</a>
+                   </td><td><a href="index.php?pagina=autoevaluacion_c2_01_negociacion">Hacer</a></td>
+            </tr>
+           
+            
+			<tr>
+                <td rowspan="3"> Unidad 2</td>
+                <td rowspan="3"> Administración de ventas</td>
+                <td>  <a href="archivos/01_proceso_ventas.pdf" target="_blank" onClick="ga('send', 'event', 'enlace', 'click', 'cv2_pdf_ventas', 1 );">Descargar pdf Proceso de Ventas</a> </td>
+				<td> </td>
+            </tr>
+					<tr><td> 
+                <a href="index.php?pagina=pronostico_de_ventas">Ver Pronósticos de Ventas</a></td><td><a href="index.php?pagina=autoevaluacion_cv2_pronosticos">Hacer</a></td></tr>
+					<tr><td>Planeación de la Fuerza de Ventas</td><td></td></tr>
+					
+					
+               <tr>
+                <td> Unidad 3</td>
+                <td>Comunicación Integral de Marca</td>
+                <td><a href="index.php?pagina=publicidad_introduccion">Introducción a la Comunicación Integral de Marca</a>
+                </td>
+                <td> <a href="index.php?pagina=autoevaluacion_c1_08_publicidad_promocion">Hacer</a>
+                </td>
+               </tr>
+               
+             <tr>
+                <td>Unidad 4</td>
+				<td>Marketing on-line</td>
+            	<td>
+                <a href="index.php?pagina=marketing_digital">Marketing Digital</a>
+					</td>
+                <td><a href="index.php?pagina=autoevaluacion_c2_07_marketing_digital">Hacer</a></td>
+             </tr>
+            
+           <tr>
+                <td> Unidad 5</td>
+                <td> Plan de marketing en la práctica</td>
+                <td> <a href="archivos/Plan_Marketing.pdf" target="_blank" onClick="ga('send', 'event', 'enlace', 'click', 'cv2_pdf_plan_mkt', 1 );">Descargar pdf Plan de Marketing</a>
+                </td>
+                <td> <a href="index.php?pagina=autoevaluacion_estrategia_precios"></a></td>
+             </tr>
+           
+          
+        </table>
+        
+        
+        
+            
+           <h3>Trabajo Práctico: Plan de Marketing</h3>
+        
+    
+        
+        <table class="tabla">
+            <tr>
+      
+            
+              <tr>
+                <td>Plan de Marketing</td>
+              
+                <td><a href="index.php?pagina=plan_marketing">Ver Guía</a></td>
+            </tr>
+        </table>
+    
+     
+
+         <h3>Conocimientos auxiliares</h3>
+        
+    
+        
+        <table class="tabla">
+            <tr>
+                <th>Unidad</th>
+                <th>Descripción</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Unidad 9</td>
+                <td>
+                    Costos
+                </td>
+                <td><a href="index.php?pagina=costos_fijos_variables">Ver</a></td>
+                </tr>
+                <td>Unidad 9</td>
+                <td>
+                    Punto de Equilibrio
+                </td>
+                <td><a href="index.php?pagina=punto_equilibrio">Ver</a></td>
+            </tr>
+        </table>
+    
+	<br><br>
+       </article>
+    
+  </section>

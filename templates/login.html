@@ -1,0 +1,44 @@
+ <?php
+ 
+ if(isset($_POST["email"]) && isset($_POST["clave"])){
+    
+        $usuario    =   validarUsuario($_POST["email"],$_POST["clave"]);
+
+        //Si es que el usuario y la clave son validas, entonces
+        //Almaceno el resultado en session para compartir
+        //los datos del usuario en el resto de las paginas
+
+        if($usuario){
+
+            $_SESSION["usuario"]    =   $usuario;
+
+        }
+        
+    }else{
+
+        $usuario    =   FALSE;
+        
+    }
+?>
+		<div id="cuerpo" style="height:auto;">
+
+			<h1>Login de usuario</h1>
+
+			<div id="izquierda">
+    			    <?php
+				require TEMPLATE_PATH.'/menu.php';
+			    ?>
+			</div>
+
+			<div id="principal">
+                            <?php
+                                if($usuario){
+                                    echo "<h2>Bienvenido $usuario[nombre]</h2>";
+                                }else{
+                                    echo "<h2>Credenciales invalidas</h2>";
+                                }
+                            ?>
+			</div>
+
+		</div><!-- cuerpo -->
+

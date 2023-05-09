@@ -1,0 +1,47 @@
+<html>
+      <head>
+            <style>
+          .thumb {
+            height: 300px;
+            border: 1px solid #000;
+            margin: 10px 5px 0 0;
+          }
+        </style>
+    </head>
+    <body>
+     
+     <form name="f3" method="post" action="index.php?pagina=libros_alta_ejecuta2" enctype="multipart/form-data">
+      <input type="file" id="files" name="imagen[]" />
+        <br />
+        <output id="list"></output>
+         
+        <script>
+              function archivo(evt) {
+                  var files = evt.target.files; // FileList object
+             
+                  // Obtenemos la files del campo "file".
+                  for (var i = 0, f; f = files[i]; i++) {
+                    //Solo admitimos imágenes.
+                    if (!f.type.match('image.*')) {
+                        continue;
+                    }
+             
+                    var reader = new FileReader();
+             
+                    reader.onload = (function(theFile) {
+                        return function(e) {
+                          // Insertamos la files
+                         document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+                        };
+                    })(f);
+             
+                    reader.readAsDataURL(f);
+                  }
+              }
+             
+              document.getElementById('files').addEventListener('change', archivo, false);
+      </script>
+      <center>	<input type="submit" value="Enviar" /> </center>
+</form>  
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name= "Description" content="Pronósticos de Ventas Método promedio movil, movil ponderado, suavizado exponencial, Mínimos Cuadrados y regresión líneal"/>
+<meta name="keywords" content="Pronósticos de Ventas, Promedio Móvil, Promedio movil ponderado, Mínimos Cuadrados"/>
+<title>Pronósticos de Ventas</title>
+
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link href="css/tablas.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<style type="text/css">
+  
+
+body {
+	
+	padding-top: 180px; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+
+#main-header {
+	background: #333;
+	color: white;
+	height: 80px;
+	
+	width: 90%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+</style>
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head><!--Curso Comercialización y Ventas 1-->
+<body>
+<div class="container">
+  <header id="main-header">
+    <div class="primary_header">
+      <a href="index.php"><span><h1 class="title">Aprendizaje Activo</h1></span></a>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <?php
+		require TEMPLATE_PATH.'/menu_pronostico.php';
+		?>
+    </nav>
+  </header>
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    
+    <article class="left_article">
+        <h3>Pronósticos de Ventas</h3>
+				
+        <p>
+        En esta página podrás encontrar videos explicativos para cada uno de los métodos matemáticos y/o estadísticos para realizar el pronóstico de ventas.</p>
+<br><br>
+<h4><a id="Promedio_movil"><br>Método: Promedio Móvil</a></h4><hr/>
+<center>
+<iframe width="320" height="240" src="https://www.youtube.com/embed/ZoRA_H4UxtA" frameborder="0" allowfullscreen></iframe>
+</center>
+<a href="archivos/Pronostico_Promedio_Movil.xlsx" onClick="ga('send', 'event', 'enlace', 'click', 'pronostico_promedio_M', 1 );">Descargar archivo Excel</a>
+<br><br>
+		
+		
+<h4><a id="Promedio_Movil_P"><br><br>Método: Promedio Móvil Ponderado</a></h4><hr/><br><br><br>
+<center>
+<iframe width="320" height="240" src="https://www.youtube.com/embed/dQwyHNOmSMA" frameborder="0" allowfullscreen></iframe>
+</center>
+<a href="archivos/Pronostico_Promedio_Movil_Ponderado.xlsx" onClick="ga('send', 'event', 'enlace', 'click', 'pronostico_promedio_MP', 1 );">Descargar archivo Excel</a>
+<br><br>
+			
+<h4><a id="Suavizado_Exponencial"><br><br><br>Método: Suavizado Exponencial</a></h4><hr/><br><br>
+<center>
+<iframe width="320" height="240" src="https://www.youtube.com/embed/bBHHZeSvJ8A" frameborder="0" allowfullscreen></iframe>
+</center>
+	
+<a href="archivos/minimos_cuadrados.xls" onClick="ga('send', 'event', 'enlace', 'click', 'pronostico_suavizado_E', 1 );">Descargar archivo Excel</a>	
+	
+				<br><br>
+<h5>Deducción de la formula de Suavizado Exponencial</h5>
+<center>
+<iframe width="320" height="240" src="https://www.youtube.com/embed/UNcswlZROxc" frameborder="0" allowfullscreen></iframe>
+</center><br><br>
+		
+		<h4><a id="Minimos_cuadrados"><br><br><br><br><br>Método: Mínimos Cuadrados</a></h4><hr/>
+		
+		        <p>
+        En este video podes ver el procedimiento para estimar las ventas usando el método de mínimos cuadrados.<br>
+
+<center>
+<iframe width="320" height="240" src="https://www.youtube.com/embed/bwatwGpDuFM" frameborder="0" allowfullscreen></iframe>
+</center>
+
+<br><br>
+		En este link podes descargar el archivo del video:
+<a href="archivos/pronosticos_minimos_cuadrados.xlsx" onClick="ga('send', 'event', 'enlace', 'click', 'pronostico_minimo_c', 1 );">Descargar archivo Excel</a></p>
+
+		<h4>Material de Clase</h4>
+		
+   <hr/>
+		<p>
+	<a href="archivos/03_pronosticos_ventas.pdf" target="_blank" onClick="ga('send', 'event', 'enlace', 'click', 'pdf_c1_02', 1 );">Descargar Presentación de clase en pdf</a>
+       <br><br>
+		<a href="index.php?pagina=autoevaluacion_cv2_pronosticos">Realizar la Autoevaluación de Pronósticos de Ventas</a>
+		
+		
+		</p>
+<br><br>
+
+<form name="f3" method="POST" action="index.php?pagina=gracias">
+<input type="hidden" name="20" value=" <?php echo date("d-m-Y");?>">
+<input type="hidden" name="a" value=";punto_equilibrio;">
+
+¿Este contenido te ha sido útil?
+<select name="Utilidad">
+<option value="Muy útil" selected>Muy útil</option>    
+<option value="Útil" selected> Útil</option>
+<option value="Algo útil">Algo útil </option>
+<option value="No, es confuso" >No, es confuso </option>
+</select>
+<br><br>
+
+<input type="hidden" name="n" value=";Comentarios:;">
+<fieldset>
+    <legend> <font face="Arial" color="#FF0033"> Nos gustaría conocer tu opinión para ofrecerte una mejor experiencia </font></legend>
+ <label for="Comentarios"></label>
+          <textarea  name="Comentarios" rows="5" cols="100"></textarea>
+</fieldset>
+          <br>
+          <center>	<input type="submit" value="Enviar" /> </center>
+</form>
+</article>
+	</section>

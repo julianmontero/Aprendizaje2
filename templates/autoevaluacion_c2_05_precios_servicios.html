@@ -1,0 +1,112 @@
+<meta charset="UTF-8"/>
+<meta name= "Description" content="Autoevaluación Estrategia de precios para servicios, 
+                participación activa"/>
+
+<title>Autoevaluación Estrategia de Precios para Servicios</title>
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head>
+<body>
+<div id="contenedor">
+
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+<div id="principal">
+<h1>Autoevaluación Estrategia de Precios para Servicios</h1>
+
+
+<br/><br/>
+
+<FORM name="f3" method="POST" action="index.php?pagina=autoevaluacion_resultado">
+<input type="hidden" name="20" value=" <?php echo date("d-m-Y");?>">
+    <input type="hidden" name="0" value="c2_05">	
+
+<label for="Apellido">Apellido</label>
+          <input type="text" name="Apellido" value="" />
+      
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" value="" /><br /><br/>
+
+
+	<label>1- El marketing es una función organizacional y un sistema de procesos para:</label><br/>
+	
+        <input type="radio" name="1" value="-1">Aumentar el volumen de ventas de la empresa<br/>
+        <input type="radio" name="1" value="-1">Hacer publicidad y promoción<br/>
+	<input type="radio" name="1" value="2">Crear valor para los consumidores<br/>
+	<input type="radio" name="1" value="-1">Crear valor para los accionistas<br/><br/>
+        
+              
+        <label>2- El marketing estratégico incluye</label><br/>
+	<input type="radio" name="2" value="-1">acción<br/>
+	<input type="radio" name="2" value="2">acción-análisis<br/>
+	<input type="radio" name="2" value="-1">acción-análisis-cultura<br/>
+	<input type="radio" name="2" value="-1">análisis-acción-análisis<br/><br/> 
+        
+        <label>3- El marketing operativo incluye:</label><br/>
+	
+        <input type="radio" name="3" value="2">acción<br/>
+	<input type="radio" name="3" value="-1">acción-análisis<br/>
+	<input type="radio" name="3" value="-1">acción-análisis-cultura<br/>
+	<input type="radio" name="3" value="-1">análisis-acción-análisis<br/><br/>
+        
+        <label>4- El proceso de marketing organiza las transacciones de intercambio en tres aspectos:</label><br/>
+	
+        <input type="radio" name="4" value="-1">Utiliad de lugar, de tiempo y de necesidad<br/>
+	<input type="radio" name="4" value="-1">Utilidad de tiempo, de necesidad y de deseo<br/>
+	<input type="radio" name="4" value="2">Utilidad de estado, de lugar y de tiempo<br/>
+	<input type="radio" name="4" value="-1">Utiliad de estado, de tiempo y de marca<br/><br/>
+        
+         <label>5- En un modelo de negocio dominado por el fabricante, el mismo:</label><br/>
+	
+        <input type="radio" name="5" value="2">Evita a los distribuidores y crea exclusividad y lealtad por medio de la marca<br/>
+	<input type="radio" name="5" value="-1">Involucra a los distribuidores en la creación de exclusividad y lealtad por medio de la marca<br/>
+	<input type="radio" name="5" value="-1">Implementa un plan marketing estrategico<br/>
+	<input type="radio" name="5" value="-1">Todas las opciones son correctas<br/><br/>
+        
+         <label>6- En el proceso de marketing con orientación al producto se realiza un marketing:</label><br/>
+	
+        <input type="radio" name="6" value="-1">Activo<br/>
+	<input type="radio" name="6" value="2">Pasivo<br/>
+	<input type="radio" name="6" value="-1">Estrategico<br/>
+	<input type="radio" name="6" value="-1">Operativo<br/><br/>
+        
+         <label>7- En el proceso de marketing con orientación a las ventas se realiza un marketing:</label><br/>
+	
+        <input type="radio" name="7" value="-1">Activo<br/>
+	<input type="radio" name="7" value="-1">Pasivo<br/>
+	<input type="radio" name="7" value="-1">Estrategico<br/>
+	<input type="radio" name="7" value="2">Operativo<br/><br/>
+        
+         <label>8- Se dice que se hace un marketing manipulador o salvaje cuando:</label><br/>
+	
+        <input type="radio" name="8" value="2">Se hace un uso desmedido de la publicidad y las fuerzas de venta<br/>
+	<input type="radio" name="8" value="-1">Se hace una guerra de precios entre competidores directos<br/>
+	<input type="radio" name="8" value="-1">Se hace publicidad comparativa con la competencia<br/>
+	<input type="radio" name="8" value="-1">Se hace descuentos de precios arbitrariamente<br/><br/>
+        
+         <label>9- La etapa del marketing estratégico aparece cuando:</label><br/>
+	
+        <input type="radio" name="9" value="-1">La empresa se orienta a las ventas<br/>
+	<input type="radio" name="9" value="-1">Se ha tenido éxito con el marketing operativo<br/>
+	<input type="radio" name="9" value="2">Las necesidades del núcleo central del mercado se encuentran saturadas<br/>
+	<input type="radio" name="9" value="-1">Se ha fracasado con la orientación al mercado<br/><br/>
+        
+         <label>10- El cambio en las prioridades del proceso de marketing sigue la siguiente secuencia:</label><br/>
+	
+        <input type="radio" name="10" value="2">Orientación al producto, a las ventas, al cliente y al mercado<br/>
+	<input type="radio" name="10" value="-1">Orientación al producto, a las ventas, al mercado y al cliente<br/>
+	<input type="radio" name="10" value="-1">Orientación a la promoción, a la publicidad en medios masivos, al marketing 2.0<br/>
+	<input type="radio" name="10" value="-1">Orientación a las ventas, a la publicidad en medios masivos, al marketing 2.0<br/><br/>
+ 
+        
+        
+	<input type="submit" value="Enviar autoevaluación" />
+        <br/><br/>
+        
+</FORM>
+</div><!--principal-->

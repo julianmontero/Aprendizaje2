@@ -1,0 +1,50 @@
+<html>
+    <head>
+     
+
+<title>Bienvenido al sitio Aprendizaja Activo</title>
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+    </head>
+        
+   <div id="contenedor">
+
+
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+<div id="principal">
+	<h1>Comercialización y ventas I: archivos</h1> <br /><br />
+	<br /><br />
+
+	<?php
+
+		$listado = leerdirectorioarc(ARCHIVOS_PATH);
+
+
+	if(!sizeof($listado)){
+				die("No hay archivos para mostrar");
+				
+				}
+				
+	foreach($listado as $archivo){
+	
+			$archivo =   ARCHIVOS_PATH.'/'.$archivo;
+			echo '<a href="'.$archivo.'">';
+			echo '<img width="75" src="imagenes/adobe_pdf.jpg" />';
+			echo $archivo."<br>";
+			
+										
+			
+			}
+
+?>
+
+				
+
+</div><!--principal-->
+</html>

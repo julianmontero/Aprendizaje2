@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name= "Description" content="Muestra la lista de libros que sirve de sustento teórico para los cursos"/>
+<title>Biblioteca: Lista</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link href="css/tablas.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head>
+
+<body>
+<div class="container">
+  <header>
+    <div class="primary_header">
+      <a href="index.php"><span><h1 class="title">Aprendizaje Activo</h1></span></a>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+    </nav>
+  </header>
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    
+    <article class="left_article">
+        <h3> Biblioteca: Registro de Autor</h3>
+      
+        <a href="index.php?pagina=libros_alta_form">Registrar nuevo título</a>
+<br><br>
+<?php
+ini_set("display_errors","On");
+error_reporting(E_ALL);
+       
+       require "config/db.config.php";
+        
+        $conexion=mysqli_connect($db_host,$db_usuario,$db_clave,$db_nombre);
+       
+        if(mysqli_connect_errno()){
+        
+            echo "Fallo al conectar con la Base de datos";
+            exit();
+        
+       }
+        
+        mysqli_set_charset($conexion, "utf8");
+        
+
+$editorial= mysqli_real_escape_string($conexion, $_POST['editorial']);
+
+       
+        
+        $consulta="INSERT INTO libros_editorial (editorial) VALUES('$editorial')";
+        
+        $resultados=mysqli_query($conexion, $consulta);
+        
+        if($resultados==false){
+        echo"Error en la consulta";
+        }else{
+            echo"registro guardado";
+        }
+         
+        mysqli_close($conexion); 
+
+?>
+
+<br><br>
+
+    </article>
+    
+  </section>
+ 
+  <div class="social">
+    <p class="social_icon"><img src="imagenes/botones/google.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="imagenes/botones/twit.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="imagenes/botones/face.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="imagenes/botones/linkedin.png" width="100" alt="" class="thumbnail"/></p>
+  </div>
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2014 - 2016 - <strong>Aprendizaje Activo</strong></div>
+  </footer>
+</div>
+</body>
+</html>

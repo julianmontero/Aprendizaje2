@@ -1,0 +1,78 @@
+<html>
+<head>
+
+<meta name= "Descripción" content="Encuesta"/>
+
+<title>Autoevaluación Comercialización I</title>
+
+
+<script type="text/JavaScript" src="javascript/validacion.js"></script>
+
+<link href="formulario.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="contenedor">
+
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+
+<div id="principal">
+    
+    <h1>Plantilla de encuesta</h1>
+
+<br/>
+
+<form id="form1" name="form1" method="post" action="index.php?pagina=viaje_san_isidro_resultados">
+  <p><label>Nombre 
+    <input name="nombre" type="text" id="nombre" />
+    </label><br />
+    <label>Apellido 
+    <input name="apellido" type="text" id="apellido" />
+    </label><br />
+    <label>Edad 
+    <input name="edad" type="text" id="edad" /></label><br/>
+  <label>Email 
+    <input name="email" type="text" id="email" /></label>
+    <br />
+    <label>Estado Civil 
+    <select name="estadocivil" id="estadocivil" onchange="desplegarCampoConyuge()">
+      <option></option>
+	  <option value="S">Soltero</option>
+      <option value="C">Casado</option>
+      </select>
+     </label>
+    <div id="divescondido"></div>
+  &iquest;Cu&aacute;ntas horas pasa frente a la computadora por d&iacute;a?<br />
+  <label><input name="horas" type="radio" value="radiobutton" id="horas0" />
+  Menos de 1 hora</label>
+  <label><input name="horas" type="radio" value="radiobutton" id="horas1" />
+  Entre 2 y 5 horas </label>
+  <label><input name="horas" type="radio" value="radiobutton" id="horas2" />
+  M&aacute;s de 5 horas 
+  </label> <br />
+  <p>
+    <input name="usuario" type="checkbox" id="usuario" value="checkbox" onclick="habilitarUsername()"/>
+    Poseo una cuenta de usuario<br />
+    Nombre de usuario: 
+    <input name="username" type="text" id="username" disabled="disabled"/>
+    </p>
+  <p>    Comentarios<br />
+      <textarea name="comentarios" id="comentarios" cols="45" rows="5"></textarea>
+    <br />
+  </p>
+  
+    <input type="button" name="Submit" value="Enviar" onclick="Validar()"/>
+    <input type="reset" name="Submit2" value="Restablecer" />
+   
+ 
+</form>
+    
+    
+</div>
+</body>
+</html>

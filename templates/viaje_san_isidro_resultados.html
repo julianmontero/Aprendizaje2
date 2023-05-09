@@ -1,0 +1,79 @@
+<html>
+	
+	
+<head>
+	
+
+<meta name= "Descripción" content="Estrategias didacticas para fomentar, incentivar el aprendizaje activo, la participación de los estudiantes y elevar la calidad académica"/>
+<title>Resultado de la autoevaluación</title>
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head>
+
+<div id="contenedor">
+
+
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+<div id="principal">
+	<h2>Tu cuestionario se ha guardado correctamente</h2> <br /><br />
+	<br /><br />
+
+<?php
+
+
+// devolver la suma del array y dividir por dos
+// guardar las respuestas en un txt
+
+
+
+$nota = $_POST;
+
+$arch = "investigacion.txt";
+
+$file = fopen($arch, 'a');
+
+	if($file){
+
+		$error =0;
+
+		foreach($_POST as $key=>$val){
+
+			$word = strlen($val);
+		
+			$escrito = fwrite($file,$val);
+
+			if($escrito < $word){
+
+				$error++;
+			}
+		}
+
+		if($error == 0){
+
+			fwrite($file, "\r\n");
+
+		
+		}else{
+
+			echo ("Error de escritura");
+		}
+
+		fclose($file);
+	}
+echo "<h2>Muchas gracias por tu colaboración!!!</h2> ";
+	
+
+	?>
+        <br>
+        
+        
+        
+
+</div><!--principal-->
+</html>

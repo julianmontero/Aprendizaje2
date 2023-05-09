@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name= "Description" content="Muestra la lista de libros que sirve de sustento teórico para los cursos"/>
+<title>Autoevaluación Registros Guardados</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link href="css/tablas.css" rel="stylesheet" type="text/css">
+<link href="css/formulario.css" rel="stylesheet" type="text/css">
+    
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+   <style>
+          .thumb {
+            height: 300px;
+            border: 1px solid #000;
+            margin: 10px 5px 0 0;
+          }
+       .center{
+           text-align: center;
+       }
+        </style>
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head>
+
+<body>
+<div class="container">
+<header class="main-header">
+    <div class="primary_header">
+      <a href="index.php"><span><h1 class="title">Aprendizaje Activo</h1></span></a>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <?php
+		require TEMPLATE_PATH.'/menu.php';?>
+        
+    </nav>
+  </header>
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    
+    <article class="left_article">
+        <h3> Encuesta sobre habitos de estudio</h3>
+            <h1><label>Esta es una breve encuesta destinada a estudiantes unversitarios con el objetivo de
+            conocer sus necesidades y preferencias respecto de las tecnologías de la información</label></h1>
+            
+     
+            
+            
+            <form class="contact_form" name="f3" method="POST" action="index.php?pagina=encuesta_estudiantes_reg">
+
+		<ul><li> <label>Nombre:</label></td>
+        <td><input type="text" name="nombre" value="" /> </li>
+      
+      <li><label>Apellido:</label>
+        <input type="text" name="apellido" value="" /> </li>
+          
+          <li> <label>Mail:</label></td>
+        <td><input type="text" name="mail" value="" /> </li>
+    
+           <li>  <label>Asignatura</label>
+        <select name="asignatura">
+<option value="" selected> ... </option>
+
+<option value="CV_1">Comercialización y Ventas 1</option>
+<option value="CV_2">Comercialización y Ventas 2</option>
+
+</select> </li>
+            
+            <li> <label>Turno</label>
+        <select name="turno">
+<option value="" selected> ... </option>
+<option value="1">Mañana </option>
+<option value="2" >Tarde</option>
+<option value="3" >Noche</option></select>
+	</li>
+	          <li> <label>Modalidad</label>
+        <select name="modalidad">
+<option value="" selected> ... </option>
+<option value="1">Presencial </option>
+<option value="2" >Sincrónico</option>
+<option value="3" >Asincrónico</option></select>
+	</li>
+
+	
+	</ul>
+
+	<fieldset>
+    <legend> 1-¿Te consideras un lector habitual?</legend>
+<br>
+
+           Sí <input type="radio" name="2" value="2" /> 
+		 No <input type="radio" name="2" value="1"/> 
+ 
+</fieldset>
+<br><br>
+    Hola mundo
+   
+   <fieldset>
+    
+    <legend>2- ¿Leíste algún libro en los últimos 30 días?</legend>
+
+ <label>   Sí <input type="radio" name="2" value="2" /> </label> 
+<label> No <input type="radio" name="2" value="1"/> </label><br><br>
+En caso afirmativo, ¿Podría decirnos cuál/es?
+
+
+<table class="tabla" summary="Tabla genérica">
+    <tr>
+        <td>
+         <input type="text" name="2_a" style="width:90%" value="" />
+        </td>
+    </tr>
+</table>
+
+
+</fieldset><br>
+<br>
+
+ <fieldset>
+    <legend> 3-¿Preferis estudiar solo o con compañeros y amigos?</legend>
+<br>
+
+          <label>   Solo <input type="radio" name="3" value="1" /> </label> <label> Compañeros/amigos <input type="radio" name="3" value="2"/> </label>  
+   
+</fieldset>
+<br>
+ <fieldset>
+<legend> 4-¿Cuando empezas a estudiar?</legend>
+<br>
+
+Desde el comienzo del curso<input type="radio" name="4" value="1"><br>
+    Unas semanas antes del examen <input type="radio" name="4" value="2"><br>
+    En la última semana previa al examen<input type="radio" name="4" value="3"><br>
+     
+       <br>
+       <label>Comentarios:</label>
+       <table class="tabla" summary="Tabla genérica">
+    <tr>
+        <td>
+          <input type="text" name="4_a" style="width:90%" value="" />
+        </td>
+    </tr>
+</table>
+       </fieldset><br> 
+      <fieldset>
+    <legend> 5-¿Al momento de empezar a estudiar?</legend>
+<br>
+
+ Me siento entusiasmado por la lectura<input type="radio" name="5" value="1"><br>
+   Me siento ansioso por terminar la lectura<input type="radio" name="5" value="2"><br>
+ Siento temor al fracaso en el examen<input type="radio" name="5" value="3"><br>
+     
+       <br> <label>Comentarios:</label>
+		   <input type="text" name="5_a" style="width:90%" value="" />
+       
+       </fieldset><br>  
+       
+             <fieldset>
+    <legend> 6-Con relación a la extensión de la lectura</legend>
+<br>
+La enfrento como un desafío más<input type="radio" name="6" value="1"><br>
+    Me siento abrumado por la cantidad de hojas <input type="radio" name="6" value="2"><br>
+No me preocupa, estudio de resúmenes<input type="radio" name="6" value="3"><br>
+       <br>
+       <label>Comentarios:</label>
+   
+          <input type="text" name="6_a" style="width:90%" value="" />
+    
+       </fieldset><br>
+       
+       <fieldset>
+    <legend> 7-¿Qué técnicas de estudio utilizas habitualmente?</legend>
+ <label for="Comentarios"></label>
+   
+          <textarea  name="7" rows="5" style="width:90%"></textarea></td>
+
+</fieldset>
+<br> 
+
+
+<fieldset>
+    <legend> 8- ¿De qué manera haces resúmenes?</legend>
+<br>
+A mano en papel<input type="radio" name="8" value="1"><br>
+    Procesador de texto, Word, pages, o similiar<input type="radio" name="8" value="2"><br>
+     Uso el resumen de un compañero<input type="radio" name="8" value="3"><br>
+     
+       <br>
+       <label>Comentarios:</label>
+  
+          <input type="text" name="8_a" style="width:90%" value="" />
+    
+       </fieldset><br>
+
+<fieldset>
+    <legend>  9-¿Usas otros programas o tecnologías para estudiar?</legend>
+<br>
+<label>   Sí <input type="radio" name="9" value="2" /> </label> 
+<label> No <input type="radio" name="9" value="1"/> </label><br><br>
+En caso afirmativo, ¿Podría decirnos cuáles?
+
+
+<table class="tabla" summary="Tabla genérica">
+    <tr>
+        <td>
+         <input type="text" name="9_a" style="width:90%" value="" />
+        </td>
+    </tr>
+</table>
+
+ </fieldset><br>
+ 
+ 
+ <fieldset>
+    <legend>  10-¿Conoces alguna aplicación para hacer mapas conceptuales?</legend>
+<br>
+<label>   Sí <input type="radio" name="10" value="2" /> </label> 
+<label> No <input type="radio" name="10" value="1"/> </label><br><br>
+En caso afirmativo, ¿Cuál?
+
+
+<table class="tabla" summary="Tabla genérica">
+    <tr>
+        <td>
+         <input type="text" name="10_a" style="width:90%" value="" />
+        </td>
+    </tr>
+</table>
+
+ </fieldset><br>
+ 
+ 
+ <fieldset>
+    <legend> 11- En relación al tiempo y esfuerzo dedicado al estudio estas conforme con el nivel de aprendizaje alcanzado?</legend>
+<br>
+
+ Muy conforme<input type="radio" name="11" value="100"><br>
+    Conforme <input type="radio" name="11" value="75"><br>
+    Algo conforme<input type="radio" name="11" value="50"><br>
+    Poco conforme <input type="radio" name="11" value="25"><br>
+     Nada conforme<input type="radio" name="11" value="0"><br>
+     
+       <br>
+       <label>Comentarios:</label>
+       <table class="tabla" summary="Tabla genérica">
+    <tr>
+        <td>
+          <input type="text" name="11_a" style="width:90%" value="" />
+        </td>
+    </tr>
+</table>
+       </fieldset><br>
+       
+       <fieldset>
+    <legend> 12- Cuál es tu nivel de satisfacción con las técnicas y métodos de estudio que utilizas?</legend>
+<br>
+ Muy conforme<input type="radio" name="12" value="100"><br>
+    Conforme <input type="radio" name="12" value="75"><br>
+    Algo conforme<input type="radio" name="12" value="50"><br>
+    Poco conforme <input type="radio" name="12" value="25"><br>
+     Nada conforme<input type="radio" name="12" value="0"><br>
+       <br>
+       <label>Comentarios:</label>
+       <table class="tabla" summary="Tabla genérica">
+    <tr>
+        <td>
+          <input type="text" name="12_a" style="width:90%" value="" />
+        </td>
+    </tr>
+</table>
+       </fieldset><br>
+       
+       
+       
+       <fieldset>
+    <legend>  13-¿Consideras qué con estas técnicas alcanzas el máximo de tu potencial?</legend>
+<br>
+<label>   Sí <input type="radio" name="13" value="2" /> </label> 
+<label> No <input type="radio" name="13" value="1"/> </label><br>
+
+ </fieldset><br>
+ 
+      
+
+
+<br/>
+
+ <div align="center">
+        <button class="submit" type="submit" value="Enviar" >Enviar</button></div>
+
+<br/><br/><br/><br/>
+</form>
+ </article>
+    </section>

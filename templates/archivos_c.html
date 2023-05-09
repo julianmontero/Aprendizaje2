@@ -1,0 +1,55 @@
+<html>
+	<head>
+	
+
+<meta name= "Descripción" content="Estrategias didacticas para fomentar, incentivar el aprendizaje activo, la participación de los estudiantes y elevar la calidad académica"/>
+<title>Bienvenido al sitio Aprendizaja Activo</title>
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head>
+
+
+
+<div id="contenedor">
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+<div id="principal">
+	<h1>Descargar archivos</h1> <br /><br />
+	<br /><br />
+
+	<?php
+
+		$listado = leerdirectorioarc(ARCHIVOS_C_PATH);
+
+
+	if(!sizeof($listado)){
+				die("No hay archivos para mostrar");
+				
+				}
+				
+	foreach($listado as $archivo){
+	
+			
+                 $archivo =   ARCHIVOS_C_PATH.'/'.$archivo;
+                 
+                 echo "Este archivo es una ayuda para el desarrollo del trabajo prático."."<br>"
+                        ."El mismo permite registrar de manera sistemática todos los costos, clasificarlos"."<br>"
+                        ."y luego muestra un resumen que contiene el punto de equilibrio y los costos registrados."."<br>";
+			echo '<a href="'.$archivo.'">';
+			
+			echo $archivo."<br>";
+			
+										
+			
+			}
+
+?>
+
+				
+
+</div><!--principal-->
+</html>

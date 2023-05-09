@@ -1,0 +1,30 @@
+<?php
+
+    if($flag){
+    
+        session_unset();
+        session_destroy();
+
+    }else{
+    
+        die();
+
+    }
+
+?>
+                    <div id="cuerpo">
+
+			<h1>Logout</h1>
+
+			<div id="izquierda">
+
+    			    <?php
+				require TEMPLATE_PATH.'/menu.php';
+			    ?>
+			</div>
+
+			<div id="principal">
+                            <h2>Hasta luego! Gracias por su visita</h2>
+			</div>
+
+		</div><!-- cuerpo -->

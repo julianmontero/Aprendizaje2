@@ -1,0 +1,91 @@
+<meta charset="UTF-8"/>
+<meta name= "Description" content="Autoevaluación Pronóstico de Ventas, 
+                participación activa"/>
+
+<title>Autoevaluación Pronóstico de Ventas</title>
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+
+</head>
+
+<body>
+<div id="contenedor">
+
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+<div id="principal">
+<h1>Autoevaluación Pronóstico de Ventas</h1>
+
+<br/>
+
+<FORM name="f3" method="POST" action="index.php?pagina=autoevaluacion_resultado">
+<input type="hidden" name="20" value=" <?php echo date("d-m-Y");?>">
+    <input type="hidden" name="0" value="c2_09">	
+<label for="Apellido">Apellido</label>
+          <input type="text" name="Apellido" value="" />
+      
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" value="" /><br /><br/>
+
+        
+        <label>1- El enfoque microeconómico un consumidor racional que busca maximizar su nivel de satisfacción
+	el modelo se sustenta en tres axiomas</label><br/>
+	<input type="radio" name="3" value="-1">de compensación, de transitividad y de elección<br/>
+	<input type="radio" name="3" value="-1">de comparación, de permutabilidad y de elección<br/>
+	<input type="radio" name="3" value="2">de comparación, de transitividad y de elección<br/>
+	<input type="radio" name="3" value="-1">de compensación, de permutabilidad y de opción<br/><br/><br/>
+        
+        <label>2- El enfoque conductista supone una curva de aprendizaje que distingue tres zonas</label><br/>
+	<input type="radio" name="4" value="-1">solución impulsiva, solución extendida y conducta rutinaria<br/>
+	<input type="radio" name="4" value="-1">solución extensiva, solución extendida y comportamiento regular<br/>
+	<input type="radio" name="4" value="-1">solución intensiva, solución limitada y conducta alternada<br/>
+	<input type="radio" name="4" value="2">solución extensiva, solución limitada y conducta rutinaria<br/><br/>
+        
+        
+        <label>3-En el Enfoque sociológico se destaca el aporte de Adler, quien afirmo que:</label><br/>
+	<input type="radio" name="5" value="-1">el impulso humano esta guiado por los deseos sexuales y biológicos<br/>
+	<input type="radio" name="5" value="2">el impulso humano es el de una lucha por la “superioridad”<br/>
+	<input type="radio" name="5" value="-1">el impulso humano es el de una lucha por la supervivencia<br/>
+	<input type="radio" name="5" value="-1">el impulso humano está condicionado por aprendizaje condicionado<br/><br/>
+        
+         <label>4-Dentro del enfoque sociológico, Veblen afirma que
+la propensión emulativa es la más fuerte después del instinto de
+autoconservación, describe el efecto snobismo como</label><br/>
+	<input type="radio" name="6" value="-1">la imitación de las clases bajas sobre las clases más pudientes<br/>
+	<input type="radio" name="6" value="-1">el deseo de las clases medias por adquirir productos propios de clases altas<br/>
+	<input type="radio" name="6" value="2">el rechazo de marcas exclusivas que se han generalizado<br/>
+	<input type="radio" name="6" value="-1">la opción a y b son correctas<br/><br/>
+
+        <label>5-La teoría freudiana sostiene que el comportamiento humano responde</label><br/>
+	<input type="radio" name="7" value="-1">al carácter de sus necesidades afectivas<br/>
+	<input type="radio" name="7" value="2">al carácter de sus impulsos sexuales y biológicos<br/>
+	<input type="radio" name="7" value="-1">al carácter de sus necesidades de auto superación<br/>
+	<input type="radio" name="7" value="-1">las tres opciones son correctas<br/><br/>
+
+        <label>6-En la segunda tópica propuesta por Freud las instancias del Ello y el superyó están mediadas </label><br/>
+	<input type="radio" name="8" value="-1">entre si<br/>
+	<input type="radio" name="8" value="-1">Son independientes<br/>
+	<input type="radio" name="8" value="-1">por el consciente<br/>
+	<input type="radio" name="8" value="2">por el yo<br/><br/>
+        
+        <label>7-En el proceso de percepción el sujeto desarrolla sucesivas actividades</label><br/>
+	<input type="radio" name="9" value="2">selección, organización e interpretación<br/>
+	<input type="radio" name="9" value="-1">visualización, selección e interpretación<br/>
+	<input type="radio" name="9" value="-1">selección, interpretación y organización<br/>
+	<input type="radio" name="9" value="-1">visualización, organización y selección<br/><br/>
+ 
+        <label>8-los roles en el proceso de compra son</label><br/>
+	<input type="radio" name="10" value="-1">promotor, Influyente, Decisor, Comprador, Usuario<br/>
+	<input type="radio" name="10" value="-1">consumidor, Influyente, Decisor, Comprador<br/>
+	<input type="radio" name="10" value="2">Iniciador, Influyente, Decisor, Comprador, Usuario<br/>
+	<input type="radio" name="10" value="-1">vendedor, comrador, Usuario<br/><br/>
+        
+	<input type="submit" value="Enviar autoevaluación" />
+</FORM>
+<br>
+<br>
+</div><!--principal-->

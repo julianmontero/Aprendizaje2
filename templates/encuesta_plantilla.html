@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name= "Descripción" content="Encuesta"/>
+
+<title>Autoevaluación Comercialización I</title>
+
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+
+</head>
+
+<body>
+<div id="contenedor">
+
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+
+<div id="principal">
+    
+    <h1>Plantilla de encuesta</h1>
+
+<br/>
+
+<FORM name="f3" method="POST" action="index.php?pagina=autoevaluacion_resultado">
+<input type="hidden" name="0" value="Análisis_externo">
+
+<label for="Apellido">Apellido</label>
+          <input type="text" name="Apellido" value="" />
+      
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" value="" /><br /><br/>
+Pregunta dicotomica<br>
+<label> Masculino <input type="radio" name="genero" value="masculino" checked="checked"/> </label> <label> Femenino <input type="radio" name="genero" 
+value="femenino"/> </label> <br><br>
+
+Pregunta tipo combo solo una opción
+<select name="pais">
+
+<option value="argentina"> Argentina </option>
+<option value="brasil" > Brasil </option>
+<option value="uruguay"> Uruguay</option>
+
+</select><br><br>
+
+Pregunta multiples opciones una respuesta
+ <label>1-¿Cuál de las siguientes opciones no es una barrera de ingreso?</label><br/>
+
+ <input type="radio" name="1" value="-1">Acceso a canales de distribución<br/>
+
+ <input type="radio" name="1" value="2">Costos fijos elevados<br/>
+
+ <input type="radio" name="1" value="-1">Diferenciación de producto<br/>
+
+ <input type="radio" name="1" value="-1">Economías de escala<br/><br/> <br/>
+
+ Intereses multiples opciones multiples respuestas
+ <label><input type="checkbox" name="intereses" value="cine"/> Cine </label><br/>
+ <label><input type="checkbox" name="intereses" value="cine"/> Cine </label><br/>
+ <label><input type="checkbox" name="intereses" value="cine"/> Cine </label><br/>
+ <label><input type="checkbox" name="intereses" value="cine"/> Cine </label><br/><br/>
+
+ <br/> 
+ 
+ 
+
+	<input type="submit" value="Enviar autoevaluación" />
+</FORM>
+    
+    
+</div>
+</body>
+</html>

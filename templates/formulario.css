@@ -1,0 +1,12 @@
+.campoCorrecto {
+	background-color: #FFFFFF;
+	border: 1px solid #0F0;
+}
+.campoError {
+	background-color: #FF0000;
+	border: 1px solid #000;
+}
+label span {
+  color: #F00;
+  margin-left:5px;
+}

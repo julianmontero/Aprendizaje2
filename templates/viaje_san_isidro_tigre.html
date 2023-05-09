@@ -1,0 +1,145 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name= "Descripción" content="Encuesta"/>
+
+<title>Autoevaluación Comercialización I</title>
+
+<script type="text/JavaScript" src="javascript/validar.js"></script>
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head>
+
+<body>
+<div id="contenedor">
+
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+
+<div id="principal">
+    
+    <h1>Formulario de registro:</h1>
+    <p>
+    Registrate acá para tener y completa una breve encuesta,<br>
+    a las ciudades de Tigre y San Isidro.<br>
+    
+    <p> Desde ya muchas gracias!!!
+    
+<br/>
+
+<FORM name="f3" method="POST" action="index.php?pagina=viaje_san_isidro_resultados">
+
+<fieldset>
+    <legend> <font face="Arial" color="orange"> Datos personales  </font></legend>
+
+    <label for="Apellido">Apellido</label>
+          <input type="text" name="Apellido" value="" />
+      
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" value="" />
+
+<label>Sexo:</label>
+
+<label>   Masculino <input type="radio" name="genero" value="masculino" /> </label> 
+<label> Femenino <input type="radio" name="genero" value="femenino"/> </label>
+
+
+<label for="Edad">Edad</label>
+          <input name="Edad" type="text" size="4" maxlength="2" id="edad" />
+<input type="text" name="mail" value="" />
+<br><br>
+<input type="hidden" name="e" value=";Carrera:">
+¿Qué carrera estas cursando?
+<select name="Asignatura">
+<option value="" selected> ... </option>
+<option value="uai1">Comercialización y Ventas 1 </option>
+<option value="up1" >Comercialización </option>
+<option value="upest"> Estrategias Empresariales </option>
+<option value="upinv"> Investigación de Mercados </option>
+</select> </fieldset>
+<br>
+<input type="hidden" name="f" value=";1-Compromiso:">
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 1 </font></legend>
+¿Tiene algun compromiso habitual que le impida realizar una excursión fullday los días sábados?<br>
+<label>   Sí <input type="radio" name="1" value="Sí" /> </label> <label> No <input type="radio" name="1" 
+value="No"/> </label></fieldset>
+<br>
+
+<input type="hidden" name="g" value=";2-Frecuencia:">
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 2 </font></legend>
+<label>¿Con cuál de las siguientes frases se siente más identificado?</label><br>
+
+ <input type="radio" name="2" value="1">Salgo de paseo siempre que puedo<br/>
+ <input type="radio" name="2" value="2">Ocasionalmente salgo de paseo<br/>
+ <input type="radio" name="2" value="3">Salgo poco de paseo<br/>
+ <input type="radio" name="2" value="4">No suelo salir de paseo<br/></fieldset><br>
+
+ <input type="hidden" name="h" value=";3-Preferencias:">
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 3 </font></legend>
+
+<label>¿Cuál de estos lugares eligiría para disfrutar un día libre?</label><br>
+
+<input type="radio" name="3" value="1">En casa<br/>
+<input type="radio" name="3" value="2">Shopping<br/>
+<input type="radio" name="3" value="3">Parque o plaza<br/>
+<input type="radio" name="3" value="4">Teatro o cine<br/>
+<input type="radio" name="3" value="5">Otros<br/></fieldset><br>
+
+<input type="hidden" name="i" value=";4-Visito?:">
+<fieldset>
+    
+    <legend> <font face="Arial" color="orange"> 4 </font></legend>
+¿Visito el Tigre en alguna oportunidad?
+
+<label>   Sí <input type="radio" name="visito" value="Sí"/> </label> <label> No <input type="radio" name="visito" 
+value="No"/> </label><br><br>
+<input type="hidden" name="j" value=";Actividades:">
+<label for="Actividades_realizadas">En caso afirmativo, ¿Qué actividades realizo?</label>
+          <input type="text" size="80" name="Actividades_realizadas" value="" />
+          <br><br>
+<input type="hidden" name="k" value=";motivos">          
+         <label for="Porqueno">En caso negativo ¿Porque no lo ha hecho aún?</label>
+          <input type="text" size="78" name="Porqueno" value="" />
+          <br>
+</fieldset><br>
+         <input type="hidden" name="l" value=";5-presupuesto:"> 
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 5 </font></legend>          
+<label>¿Cuanto esta dispuesto a pagar por una excursión fullday pensión completa?</label><br>
+
+ <input type="radio" name="5" value="1">Entre 100 y 200<br/>
+ <input type="radio" name="5" value="2">Entre 201 y 300<br/>
+ <input type="radio" name="5" value="3">Entre 301 y 400<br/>
+ <input type="radio" name="5" value="4">Entre 401 y 500<br/></fieldset><br/>
+
+ <input type="hidden" name="m" value=";6-Actividades:">
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 6 </font></legend> 
+¿Qué tipo de actividad desea realizar en el destino?<br>
+ <label><input type="checkbox" name="6-1" value="6-1"/> Capacitación </label><br/>
+ <label><input type="checkbox" name="6-2" value="6-2"/> Culturales </label><br/>
+ <label><input type="checkbox" name="6-3" value="6-3"/> Recreativas </label><br/>
+ <label><input type="checkbox" name="6-4" value="6-4"/> Solidarias </label><br/>
+</fieldset><br/>
+                  
+<input type="hidden" name="n" value=";7-Comentarios:">
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 7 </font></legend>
+ <label for="Comentarios">Nos gustaría conocer tu opinión o propuestas para ofrecerte una mejor experiencia</label>
+          <textarea  name="Comentarios" rows="5" cols="100"></textarea>
+</fieldset>
+          <br>
+          <center>	<input type="submit" value="Enviar" /> </center>
+</FORM>
+    
+    
+</div>
+</body>
+</html>

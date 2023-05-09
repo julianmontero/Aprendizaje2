@@ -1,0 +1,28 @@
+		<div id="cuerpo">
+
+			<h1>Biblioteca en templates</h1>
+
+			<div id="izquierda">
+
+    			    <?php
+				require TEMPLATE_PATH.'/menu.php';
+			    ?>
+			</div>
+
+			<div id="principal">
+                            <?php
+
+                                $biblioteca = obtenerbiblioteca();
+
+                                foreach($biblioteca as $biblioteca){
+
+                                    echo '<h3><a href="index.php?pagina=detalle_libro&id='.$biblioteca["id_libro"].'">'.
+                                    $biblioteca ["titulo"].
+                                    '</a></h3>';
+                                    echo "<br />";
+                                }
+
+                            ?>
+			</div>
+
+		</div><!-- cuerpo -->

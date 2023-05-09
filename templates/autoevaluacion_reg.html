@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name= "Description" content="Estrategias didacticas para fomentar, incentivar el aprendizaje activo, la participación de los estudiantes y elevar la calidad académica"/>
+<title>Resultado de la autoevaluación</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link href="css/tablas.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head>
+
+<body>
+<div class="container">
+  <header>
+    <div class="primary_header">
+      <a href="index.php"><span><h1 class="title">Aprendizaje Activo</h1></span></a>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+    </nav>
+  </header>
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    
+    <article class="left_article">
+        <h3> Resultado autoevaluación</h3>
+<?php
+ ini_set("display_errors","On");
+$apellido=$_POST["apellido"];
+$nombre=$_POST["nombre"];
+$cuestionario=$_POST["0"];
+$preg1=$_POST["1"];
+$preg2=$_POST["2"];
+$preg3=$_POST["3"];
+$preg4=$_POST["4"];
+$preg5=$_POST["5"];
+$preg6=$_POST["6"];
+$preg7=$_POST["7"];
+$preg8=$_POST["8"];
+$preg9=$_POST["9"];
+$preg10=$_POST["10"];
+$fecha=Date('Y-m-d H:i:s');
+$nota = $preg1+$preg2+$preg3+$preg4+$preg5+$preg6+$preg7+$preg8+$preg9+$preg10;
+     
+     $db_host="localhost";
+       $db_nombre="uv1807_libros";
+       $db_usuario="uv1807";
+       $db_clave="juan050nocir";
+         
+       /*  $db_host="localhost";
+        $db_nombre="aprendizajeactivo";
+        $db_usuario="root";
+        $db_clave="";
+      */  
+     
+         $conexion=mysqli_connect($db_host,$db_usuario,$db_clave,$db_nombre);
+       
+        if(mysqli_connect_errno()){
+        
+            echo "Fallo al conectar con la Base de datos";
+            exit();
+        
+       }
+        
+        mysqli_set_charset($conexion, "utf8");
+        
+        $consulta="INSERT INTO auto_evaluacion (cuestionario, apellido, nombre, preg_1, preg_2, preg_3, preg_4, preg_5, preg_6, preg_7, preg_8, preg_9, preg_10, fecha_auto) VALUES('$cuestionario', '$apellido','$nombre','$preg1','$preg2','$preg3','$preg4','$preg5','$preg6','$preg7','$preg8','$preg9','$preg10','$fecha')";
+      /*  INSERT INTO auto_evaluacion (preg_1, preg_2_a, preg_2_b, preg_3, preg_4, preg_5) VALUES( 7 , 8 , 9 , 10 , 11 , 12)*/
+        $resultados=mysqli_query($conexion, $consulta);
+        
+    
+         
+        mysqli_close($conexion); 
+echo $nombre . "<br/> <br/>";
+echo $fecha;
+
+if(($nota) < 8)
+	{
+
+		echo "<center> Te recomendamos que seguias estudiando o lo intentes nuevamente. " . "<strong> Tu puntaje total es de " . ($nota)/2 . "</strong></center><br/> <br/>";
+
+	}else if ((($nota) >= 8) and (($nota) < 16)) {
+
+		echo "<center> Felicitaciones superaste la autoevaluación." . "<strong> Tu puntaje total es de " . ($nota)/2 . "</strong></center><br/> <br/>";
+	
+	}else{
+
+		echo "<center> Excelente superaste la autoevaluación." . "<strong> Tu puntaje total es de " . ($nota)/2 . "</strong></center><br/> <br/>";
+	
+	}
+          
+?>
+
+<br>
+          <table class="tabla_evaluacion" summary="Tabla evaluación">
+
+     <tr>
+                <th>Pregunta</th>
+                <th>Respuesta</th>
+                <th>Pregunta</th>
+                <th>Respuesta</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                    
+                <td><?php
+            if(($preg1) == -1)
+    {
+    echo '<img src="imagenes/incorrecto.jpg" width="30" height="30" alt="gráfico respuesta incorrecta" title="Respuesta incorrecta">';
+    
+    }else if (($preg1) == 2){
+    echo '<img src="imagenes/correcto.jpg" width="30" height="30" alt="gráfico respuesta correcta" title="Respuesta Correcta">';
+    
+    }else
+    { echo" ";
+    }
+
+    ?>
+               
+                </td>
+                <td>6</td>
+                <td><?php
+                        if(($preg6) == -1)
+    {
+    echo '<img src="imagenes/incorrecto.jpg" width="30" height="30" alt="gráfico respuesta incorrecta" title="Respuesta incorrecta">';
+    
+    }else if (($preg6) == 2){
+    echo '<img src="imagenes/correcto.jpg" width="30" height="30" alt="gráfico respuesta correcta" title="Respuesta Correcta">';
+    
+    }else
+    { echo" ";
+    }
+                   
+                    ?></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                    
+                <td><?php
+                    if(($preg2) == -1)
+    {
+    echo '<img src="imagenes/incorrecto.jpg" width="30" height="30" alt="gráfico respuesta incorrecta" title="Respuesta incorrecta">';
+    
+    }else if (($preg2) == 2){
+    echo '<img src="imagenes/correcto.jpg" width="30" height="30" alt="gráfico respuesta correcta" title="Respuesta Correcta">';
+    
+    }else
+    { echo" ";
+    }
+                    ?></td>
+                
+                <td>7</td>
+                <td><?php
+                    if(($preg7) == -1)
+    {
+    echo '<img src="imagenes/incorrecto.jpg" width="30" height="30" alt="gráfico respuesta incorrecta" title="Respuesta incorrecta">';
+    
+    }else if (($preg7) == 2){
+    echo '<img src="imagenes/correcto.jpg" width="30" height="30" alt="gráfico respuesta correcta" title="Respuesta Correcta">';
+    
+    }else
+    { echo" ";
+    }
+                    ?></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                    
+                <td><?php
+                    if(($preg3) == -1)
+    {
+    echo '<img src="imagenes/incorrecto.jpg" width="30" height="30" alt="gráfico respuesta incorrecta" title="Respuesta incorrecta">';
+    
+    }else if (($preg3) == 2){
+    echo '<img src="imagenes/correcto.jpg" width="30" height="30" alt="gráfico respuesta correcta" title="Respuesta Correcta">';
+    
+    }else
+    { echo" ";
+    }
+                    ?></td>
+                <td>8</td>
+                <td><?php
+                    if(($preg8) == -1)
+    {
+    echo '<img src="imagenes/incorrecto.jpg" width="30" height="30" alt="gráfico respuesta incorrecta" title="Respuesta incorrecta">';
+    
+    }else if (($preg8) == 2){
+    echo '<img src="imagenes/correcto.jpg" width="30" height="30" alt="gráfico respuesta correcta" title="Respuesta Correcta">';
+    
+    }else
+    { echo" ";
+    }
+                    ?></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                    
+                <td><?php
+                if(($preg4) == -1)
+    {
+    echo '<img src="imagenes/incorrecto.jpg" width="30" height="30" alt="gráfico respuesta incorrecta" title="Respuesta incorrecta">';
+    
+    }else if (($preg4) == 2){
+    echo '<img src="imagenes/correcto.jpg" width="30" height="30" alt="gráfico respuesta correcta" title="Respuesta Correcta">';
+    
+    }else
+    { echo" ";
+    }
+                   ?> </td>
+                <td>9</td>
+                <td><?php
+                    if(($preg9) == -1)
+    {
+    echo '<img src="imagenes/incorrecto.jpg" width="30" height="30" alt="gráfico respuesta incorrecta" title="Respuesta incorrecta">';
+    
+    }else if (($preg9) == 2){
+    echo '<img src="imagenes/correcto.jpg" width="30" height="30" alt="gráfico respuesta correcta" title="Respuesta Correcta">';
+    
+    }else
+    { echo" ";
+    }
+                ?></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                    
+                <td><?php
+                    if(($preg5) == -1)
+    {
+    echo '<img src="imagenes/incorrecto.jpg" width="30" height="30" alt="gráfico respuesta incorrecta" title="Respuesta incorrecta">';
+    
+    }else if (($preg5) == 2){
+    echo '<img src="imagenes/correcto.jpg" width="30" height="30" alt="gráfico respuesta correcta" title="Respuesta Correcta">';
+    
+    }else
+    { echo" ";
+    }
+                    ?></td>
+                <td>10</td>
+                <td><?php
+                    if(($preg10) == -1)
+    {
+    echo '<img src="imagenes/incorrecto.jpg" width="30" height="30" alt="gráfico respuesta incorrecta" title="Respuesta incorrecta">';
+    
+    }else if (($preg10) == 2){
+    echo '<img src="imagenes/correcto.jpg" width="30" height="30" alt="gráfico respuesta correcta" title="Respuesta Correcta">';
+    
+    }else
+    { echo" ";
+    }
+                    ?></td>
+            </tr>
+            </table>
+<br><br>
+ <aside class="right_article"> <a title="Curso Comercialización 1" href="index.php?pagina=curso_comercializacion_1"><img src="imagenes/comercializacion_1.jpg" alt="" width="400" height="200" class="placeholder"/> </a></aside>
+   <aside class="right_article"> <a title="Curso Comercialización 2" href="index.php?pagina=curso_comercializacion_2"><img src="imagenes/comercializacion_2.jpg" alt="" width="400" height="200" class="placeholder"/> </a></aside>
+   
+   <aside class="right_article"> <a title="Curso Estrategias Empresariales" href="index.php?pagina=curso_estrategias_empresariales"><img src="imagenes/estrategias_empresariales.jpg" alt="" width="400" height="200" class="placeholder"/> </a></aside>
+       
+       <aside class="right_article"> <a title="Investigación de Mercados" href="index.php?pagina=curso_investigacion_mercados"><img src="imagenes/investigacion_mercados.jpg" alt="" width="400" height="200" class="placeholder"/> </a></aside>
+   <aside class="right_article"> <a title="Curso Comercialización y Ventas 1" href="index.php?pagina=curso_comercializacion_ventas_1"><img src="imagenes/comercializacion_ventas_1.jpg" alt="" width="400" height="200" class="placeholder"/> </a></aside>
+   
+   <aside class="right_article"> <a title="Curso Comercialización y Ventas 2" href="index.php?pagina=curso_comercializacion_ventas_2"><img src="imagenes/comercializacion_ventas_2.jpg" alt="" width="400" height="200" class="placeholder"/> </a></aside>
+
+    </article>
+    
+  </section>
+ 
+  <div class="social">
+    <p class="social_icon"><img src="imagenes/botones/google.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="imagenes/botones/twit.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="imagenes/botones/face.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="imagenes/botones/linkedin.png" width="100" alt="" class="thumbnail"/></p>
+  </div>
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2014 - 2016 - <strong>Aprendizaje Activo</strong></div>
+  </footer>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+<?php
+
+    require "config/db.config.php";
+    require "lib/db.funciones.php";
+    require "lib/biblioteca.funciones.php";
+    
+    echo "<pre>";
+    
+    $conexion   =   conectar(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+
+    if(!$conexion){
+        die("NO SE PUDO CONECTAR A LA BASE DE DATOS");
+    }
+    
+    $noticias   = obtenerbiblioteca();
+    
+    var_dump($biblioteca);
+
+?>

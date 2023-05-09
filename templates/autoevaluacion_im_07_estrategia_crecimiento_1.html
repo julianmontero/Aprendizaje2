@@ -1,0 +1,97 @@
+<meta charset="UTF-8"/>
+<meta name= "Descripción" content="Autoevaluación marketing, autoevaluación Comercialización, participación activa"/>
+<title>Autoevaluación Tácticas y Estrategias de Precios</title>
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+
+</head>
+
+<body>
+
+<div id="contenedor">
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+<div id="principal">
+
+<h1>Autoevaluación Tácticas y Estrategias de Precios</h1>
+<br/>
+
+<FORM name="f3" method="POST" action="index.php?pagina=autoevaluacion_resultado">
+<input type="hidden" name="0" value="Estrategias_precios">	
+
+<label for="Apellido">Apellido</label>
+          <input type="text" name="Apellido" value="" />
+      
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" value="" /><br /><br/>
+	
+	<label>1- La fijación de precios debe desarrollarse en un contexto en el que el proceso y la estructura de fijación de precios sean:</label><br/>
+	<input type="radio" name="1" value="-1">proactivos y con una estrategia de marketing de diferenciación<br/>
+	<input type="radio" name="1" value="-1">proactivos y con una estrategia de marketing de fidelización<br/>
+	<input type="radio" name="1" value="2">activos y con una estrategia de marketing en función del valor<br/>
+	<input type="radio" name="1" value="-1">activos y con una estrategia de marketing en función del mercado<br/><br/>
+	
+	<label>2- Las vallas de segmentación son</label><br/>
+	<input type="radio" name="2" value="-1">variables que permiten agrupar consumidores de similares características y necesidades<br/>
+	<input type="radio" name="2" value="2">criterios que deben satisfacer los consumidores para poder optar por los descuentos<br/>
+	<input type="radio" name="2" value="-1">criterios que deben satisfacer las empresas para modificar los niveles de precios<br/>
+	<input type="radio" name="2" value="-1">variables que permiten agrupar compradores de precios y compradores de valor<br/><br/>
+	
+	<label>3- La gráfica que muestra la relación en precio y valor recibido determina tres zonas</label><br/>
+	<input type="radio" name="3" value="-1">oportunidades perdidas, precio < valor y valor sin cosechar<br/>
+	<input type="radio" name="3" value="2">oportunidades perdidas, precio = valor y valor sin cosechar<br/>
+	<input type="radio" name="3" value="-1">oportunidades perdidas, precio > valor y valor sin cosechar<br/>
+	<input type="radio" name="3" value="-1">ninguna de las opciones es correcta<br/><br/>
+	
+	<label>4- La estrategia de marketing en función del valor debe seguir la siguiente secuencia “cinco ces”</label><br/>
+	<input type="radio" name="4" value="-1">comprender – crear oferta – compensar – convencer – capturar<br/>
+	<input type="radio" name="4" value="2">comprender – crear valor – comunicar – convencer – capturar <br/>
+	<input type="radio" name="4" value="-1">comprender – crear oferta – compensar –capturar – convencer<br/>
+	<input type="radio" name="4" value="-1">crear valor – comunicar – convencer – capturar<br/><br/>
+	
+	<label>5- La fijación de precios para descremar el mercado esta diseñada para</label><br/>
+	<input type="radio" name="5" value="-1">conseguir márgenes elevados mientras se aumenta el volumen de ventas<br/>
+	<input type="radio" name="5" value="-1">aumentar la participación de mercado a expensas del margen<br/>
+	<input type="radio" name="5" value="2">conseguir márgenes elevados renunciando al volumen de ventas<br/>
+	<input type="radio" name="5" value="-1">aumentar la participación de mercado mientras se aumenta el margen<br/><br/>
+	
+	<label>6- La fijación de precios para descremar el mercado será viable sólo sí</label><br/>
+	<input type="radio" name="6" value="-1">el producto es un commodity y el público objetivo es insensible al precio<br/>
+	<input type="radio" name="6" value="-1">el producto está bien diferenciado y el público objetivo es sensible al precio<br/>
+	<input type="radio" name="6" value="-1">el producto está bien diferenciado y el público objetivo es de clase social alta<br/>
+	<input type="radio" name="6" value="2">el producto está bien diferenciado y el público objetivo es insensible al precio <br/><br/>
+	
+	<label>7- La estrategia de fijación secuencial de precios para descremar consiste en </label><br/>
+	<input type="radio" name="7" value="-1">descremar desde los segmentos menos lucrativos a los más lucrativos por etapas en el tiempo<br/>
+	<input type="radio" name="7" value="2">descremar desde los segmentos más lucrativos a los menos lucrativos por etapas en el tiempo<br/>
+	<input type="radio" name="7" value="-1">primero descremar el mercado con precios altos y luego penetrar el mercado con precios bajos<br/>
+	<input type="radio" name="7" value="-1">ninguna de las opciones es correcta<br/><br/>
+	
+	<label>8- La fijación de precios de penetración implica</label><br/>
+	<input type="radio" name="8" value="2">usar un precio bajo para atraer clientes sensibles al precio y ganar cuota de mercado <br/>
+	<input type="radio" name="8" value="-1">usar un precio bajo para atraer clientes insensibles al precio y aumentar el margen<br/>
+	<input type="radio" name="8" value="-1">usar un precio bajo para atraer clientes sensibles al precio y aumentar el margen<br/>
+	<input type="radio" name="8" value="-1">usar un precio medio para atraer clientes sensibles al precio y ganar cuota de mercado y mantener el margen<br/><br/>
+	
+	<label>9- La fijación de precios neutros implica la una decisión estratégica consistente en</label><br/>
+	<input type="radio" name="9" value="-1">usar el mismo nivel de precios que la competencia<br/>
+	<input type="radio" name="9" value="2">no utilizar la variable precio para obtener cuota de mercado ni permitir que limite la demanda<br/>
+	<input type="radio" name="9" value="-1">usar un precio promedio de la categoría de producto<br/>
+	<input type="radio" name="9" value="-1">ninguna de las anteriores es correcta<br/><br/>
+	
+	<label>10- En las estrategias de precios neutros, penetración y descreme se habla de precios alto o bajos en relación a</label><br/>
+	<input type="radio" name="10" value="-1">el precio de la competencia directa<br/>
+	<input type="radio" name="10" value="-1">los costos de producción<br/>
+	<input type="radio" name="10" value="-1">el valor percibido por el segmento objetivo<br/>
+	<input type="radio" name="10" value="2">ninguna de las anteriores es correcta<br/><br/>
+	
+	
+	<input type="submit" value="Enviar autoevaluación" />
+        <br/><br/>
+</FORM>
+</div><!--principal-->
+

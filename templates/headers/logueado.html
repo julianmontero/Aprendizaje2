@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+   <html>
+
+       <head>
+
+           <title>Aprendizaje Activo</title>
+           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+           <!-- Hojas de estilo -->
+           <link rel="stylesheet" href="css/fonts.css" />
+           <link rel="stylesheet" href="css/main.css" />
+           <link rel="stylesheet" href="css/login.css" />
+           <link rel="stylesheet" href="css/menu.css" />
+           <link rel="stylesheet" href="css/formulario.css" />
+           
+
+           <script type="text/javascript" src="javascript/jquery.min.js"></script>
+           <script type="text/javascript" src="javascript/jquery.corner.js"></script>
+           <script type="text/javascript" src="javascript/jquery-ui-1.10.1.custom.min.js"></script>
+           <script type="text/javascript" src="javascript/jquery.shadow.js"></script>
+           <script type="text/javascript" src="javascript/documentReady.js"></script>
+
+       </head>
+
+       <body>
+
+           <div id="contenedor_general">
+
+               <div id="encabezado">
+
+                   <div id="encabezadoimg">
+
+                    <center>   <img src="imagenes/encabezado.jpg" alt="Aprendizaje Activo" /> </center>
+
+
+
+               </div> <!-- encabezado -->
+               
+               <div id="login">
+
+							<div id="campos_login">
+
+                                                            <p style="font-weight:bold;text-transform:capitalize;">
+                                                            <?php
+
+                                                                echo $_SESSION["usuario"]["nombre"];
+                                                            ?>
+                                                            </p>
+							</div><!-- campos login -->
+
+				
+               </div><!-- login-->
+               
+               </body>
+               </html>
+               

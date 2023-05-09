@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name= "Description" content="Curso Comercialización 1 material de apoyo, autoevaluación, bibliografía, marketing estrategico, marca corporativa, branding, fijacion de precios"/>
+<meta name="keywords" content="comercializacion 1,Curso comercialización, Curso marketing, aprender marketing, fijacion de precios, branding, publicidad, promoción">
+<title>Curso de Comercialización 1</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link href="css/tablas.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+</head><!--comercialización_1-->
+<body>
+<div class="container">
+  <header>
+    <div class="primary_header">
+      <a href="index.php"><span><h1 class="title">Aprendizaje Activo</h1></span></a>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+    </nav>
+  </header>
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    
+    <article class="left_article">
+         <h3>Formulario de registro:</h3>
+    <p>
+    Registrate acá para tener acceso a material exclusivo y completa una breve encuesta,<br>
+   
+    
+    <p> Desde ya muchas gracias!!!
+    
+<br/>
+
+<FORM name="f3" method="POST" action="index.php?pagina=viaje_san_isidro_resultados">
+
+<fieldset>
+    <legend> <font face="Arial" color="orange"> Datos personales  </font></legend>
+
+    <label for="Apellido">Apellido</label>
+          <input type="text" name="Apellido" value="" />
+      
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" value="" />
+
+<label>Sexo:</label>
+
+<label>   Masculino <input type="radio" name="genero" value="masculino" /> </label> 
+<label> Femenino <input type="radio" name="genero" value="femenino"/> </label>
+
+
+<label for="Edad">Edad</label>
+          <input name="Edad" type="text" size="4" maxlength="2" id="edad" />
+<input type="text" name="mail" value="" />
+<br><br>
+<input type="hidden" name="e" value=";Carrera:">
+¿Qué carrera estas cursando?
+<select name="Asignatura">
+<option value="" selected> ... </option>
+<option value="uai1">Comercialización y Ventas 1 </option>
+<option value="up1" >Comercialización </option>
+<option value="upest"> Estrategias Empresariales </option>
+<option value="upinv"> Investigación de Mercados </option>
+</select> </fieldset>
+<br>
+<input type="hidden" name="f" value=";1-Compromiso:">
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 1 </font></legend>
+¿Tiene algun compromiso habitual que le impida realizar una excursión fullday los días sábados?<br>
+<label>   Sí <input type="radio" name="1" value="Sí" /> </label> <label> No <input type="radio" name="1" 
+value="No"/> </label></fieldset>
+<br>
+
+<input type="hidden" name="g" value=";2-Frecuencia:">
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 2 </font></legend>
+<label>¿Con cuál de las siguientes frases se siente más identificado?</label><br>
+
+ <input type="radio" name="2" value="1">Salgo de paseo siempre que puedo<br/>
+ <input type="radio" name="2" value="2">Ocasionalmente salgo de paseo<br/>
+ <input type="radio" name="2" value="3">Salgo poco de paseo<br/>
+ <input type="radio" name="2" value="4">No suelo salir de paseo<br/></fieldset><br>
+
+ <input type="hidden" name="h" value=";3-Preferencias:">
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 3 </font></legend>
+
+<label>¿Cuál de estos lugares eligiría para disfrutar un día libre?</label><br>
+
+<input type="radio" name="3" value="1">En casa<br/>
+<input type="radio" name="3" value="2">Shopping<br/>
+<input type="radio" name="3" value="3">Parque o plaza<br/>
+<input type="radio" name="3" value="4">Teatro o cine<br/>
+<input type="radio" name="3" value="5">Otros<br/></fieldset><br>
+
+<input type="hidden" name="i" value=";4-Visito?:">
+<fieldset>
+    
+    <legend> <font face="Arial" color="orange"> 4 </font></legend>
+¿Visito el Tigre en alguna oportunidad?
+
+<label>   Sí <input type="radio" name="visito" value="Sí"/> </label> <label> No <input type="radio" name="visito" 
+value="No"/> </label><br><br>
+<input type="hidden" name="j" value=";Actividades:">
+<label for="Actividades_realizadas">En caso afirmativo, ¿Qué actividades realizo?</label>
+          <input type="text" size="80" name="Actividades_realizadas" value="" />
+          <br><br>
+<input type="hidden" name="k" value=";motivos">          
+         <label for="Porqueno">En caso negativo ¿Porque no lo ha hecho aún?</label>
+          <input type="text" size="78" name="Porqueno" value="" />
+          <br>
+</fieldset><br>
+         <input type="hidden" name="l" value=";5-presupuesto:"> 
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 5 </font></legend>          
+<label>¿Cuanto esta dispuesto a pagar por una excursión fullday pensión completa?</label><br>
+
+ <input type="radio" name="5" value="1">Entre 100 y 200<br/>
+ <input type="radio" name="5" value="2">Entre 201 y 300<br/>
+ <input type="radio" name="5" value="3">Entre 301 y 400<br/>
+ <input type="radio" name="5" value="4">Entre 401 y 500<br/></fieldset><br/>
+
+ <input type="hidden" name="m" value=";6-Actividades:">
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 6 </font></legend> 
+¿Qué tipo de actividad desea realizar en el destino?<br>
+ <label><input type="checkbox" name="6-1" value="6-1"/> Capacitación </label><br/>
+ <label><input type="checkbox" name="6-2" value="6-2"/> Culturales </label><br/>
+ <label><input type="checkbox" name="6-3" value="6-3"/> Recreativas </label><br/>
+ <label><input type="checkbox" name="6-4" value="6-4"/> Solidarias </label><br/>
+</fieldset><br/>
+                  
+<input type="hidden" name="n" value=";7-Comentarios:">
+<fieldset>
+    <legend> <font face="Arial" color="orange"> 7 </font></legend>
+ <label for="Comentarios">Nos gustaría conocer tu opinión o propuestas para ofrecerte una mejor experiencia</label>
+          <textarea  name="Comentarios" rows="5" cols="100"></textarea>
+</fieldset>
+          <br>
+          <center>	<input type="submit" value="Enviar" /> </center>
+</FORM>
+    
+
+
+
+
+    </article>
+    
+  </section>
+  <div class="row">
+    <div class="columns">
+    <a href="index.php?pagina=punto_equilibrio">
+      <p class="thumbnail_align"> <img src="imagenes/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>Punto Equilibrio</h4></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="imagenes/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>TITLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="imagenes/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>TITLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="imagenes/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>TITLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+  </div>
+  <div class="row blockDisplay">
+    <div class="column_half left_half">
+      <h2 class="column_title">LEFT COLUMN</h2>
+    </div>
+    <div class="column_half right_half">
+      <h2 class="column_title">RIGHT COLUMN</h2>
+    </div>
+  </div>
+  <div class="social">
+    <p class="social_icon"><img src="imagenes/botones/google.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="imagenes/botones/twit.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="imagenes/botones/face.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="imagenes/botones/linkedin.png" width="100" alt="" class="thumbnail"/></p>
+  </div>
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2014 - 2016 - <strong>Aprendizaje Activo</strong></div>
+  </footer>
+</div>
+</body>
+</html>

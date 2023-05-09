@@ -1,0 +1,141 @@
+<meta name= "Description" content="Autoevaluación Informe de investigación"/>
+
+<title>Autoevaluación Informes de Investigación</title>
+
+<?php
+		require TEMPLATE_PATH.'/Analytics.php';?>
+
+
+</head>
+
+<body>
+<div id="contenedor">
+
+	<div id="menu_izquierda">
+		<?php
+		require TEMPLATE_PATH.'/menu.php';
+		?>
+	</div>
+<div id="principal">
+
+<h1>Autoevaluación Informes de Investigación</h1><br>
+
+
+
+<FORM name="f3" method="POST" action="index.php?pagina=autoevaluacion_resultado">
+<input type="hidden" name="0" value="im_08">
+<input type="hidden" name="20" value=" <?php echo date("d-m-Y");?>">
+
+<label for="Apellido"><strong>Apellido</strong></label>
+          <input type="text" name="Apellido" value="" />
+      
+          <label for="nombre"><strong>Nombre</strong></label>
+          <input type="text" name="nombre" value="" /><br /><br/>
+
+          <fieldset>
+              <legend> <label><strong>1- El conteo de la cantidad de respuestas a una pregunta</strong></label></legend>
+              
+        <input type="radio" name="1" value="-1">permite sacar conclusiones sobre la población a partir del análisis de todos los casos<br/>
+        <input type="radio" name="1" value="-1">permite sacar conclusiones sobre la población a partir de una gran cantidad de casos<br/>
+	<input type="radio" name="1" value="2">permite sacar conclusiones sobre la población a partir de una pequeña cantidad de casos<br/>
+	<input type="radio" name="1" value="-1">Todas las opciones son correctas</fieldset><br>
+        
+        <fieldset> 
+            <legend>
+        <label><strong>2- Es muy conveniente usar muestras ya que</strong></label></legend>
+	<input type="radio" name="2" value="-1">las limitaciones de presupuesto y tiempo impiden realizar un censo a la población meta<br/>
+	<input type="radio" name="2" value="-1">el proyecto de investigación puede requerir la destrucción de casos<br/>
+	<input type="radio" name="2" value="-1">permite bajar los costos y la mano de obra<br/>
+	<input type="radio" name="2" value="2">Todas las opciones son correctas</fieldset><br/>
+        
+        
+        <fieldset>
+            <legend>
+        <label><strong>3- El marco muestral es </strong></label></legend>
+	
+        <input type="radio" name="3" value="2">una lista de elementos de la cual puede tomarse la muestra<br/>
+	<input type="radio" name="3" value="-1">una lista que incluya a toda la población de interés<br/>
+	<input type="radio" name="3" value="-1">la lista de elementos que fueron seleccionados para integrar la muestra<br/>
+	<input type="radio" name="3" value="-1">ninguna de las opciones es correcta</fieldset><br/>
+        
+        
+         <fieldset>
+            <legend>
+        <label><strong>4- Se dice que una muestra es probabilística si</strong></label></legend>
+    	
+        <input type="radio" name="4" value="-1">Cada elemento del universo tiene diferente probabilidad de ser parte de la muestra<br/>
+	<input type="radio" name="4" value="2">Cada elemento del universo tiene igual probabilidad de ser parte de la muestra<br/>
+	<input type="radio" name="4" value="-1">Cada elemento del universo tiene una máxima probabilidad de ser parte de la muestra<br/>
+	<input type="radio" name="4" value="-1">OCada elemento del universo tiene una mínima probabilidad de ser parte de la muestra</fieldset><br/>
+        
+        
+        <fieldset>
+            <legend>
+        <label><strong>5- Una muestra no probabilística resulta</strong></label></legend>
+        
+	
+        <input type="radio" name="5" value="2">inapropiada para proyectar estadísticamente los datos a la población<br/>
+	<input type="radio" name="5" value="-1">apropiada para proyectar estadísticamente los datos a la población<br/>
+	<input type="radio" name="5" value="-1">apropiada para proyectar estadísticamente los datos a la población si contiene un gran número de casos <br/>
+	<input type="radio" name="5" value="-1">inapropiada para proyectar estadísticamente los datos a la población solo si fue tomada por conveniencia</fieldset><br/>
+        
+        
+       <fieldset>
+            <legend>
+        <label><strong>6- Una muestra no probabilística por conveniencia es útil para</strong></label></legend>
+        
+        <input type="radio" name="6" value="-1">Inferir características de la población en estudio<br/>
+	<input type="radio" name="6" value="-1">Realizar un ensayo de correlación de variables<br/>
+	<input type="radio" name="6" value="-1">Realizar un ensayo de comprobación de la hipótesis<br/>
+	<input type="radio" name="6" value="2">Realizar una investigación exploratoria</fieldset><br/>
+        
+        
+        <fieldset>
+            <legend>
+        <label><strong>7- El muestreo probabilístico sistemático consiste en </strong></label></legend>
+        
+        <input type="radio" name="7" value="-1">seleccionar a los casos de la muestra por medio de un sistema informático<br/>
+	<input type="radio" name="7" value="-1">seleccionar a los casos de la muestra por medio de un sorteo<br/>
+	<input type="radio" name="7" value="-1">seleccionar a los miembros de la muestra por medio de un esquema aleatorio<br/>
+	<input type="radio" name="7" value="2">seleccionar a los miembros de la muestra por medio de una selección periódica o intervalo de casos</fieldset><br/>
+        
+        <fieldset>
+            <legend>
+        <label><strong>8- En el muestreo estratificado se</strong></label></legend>
+        
+        <input type="radio" name="8" value="2">selecciona una submuestra de cada estrato con el método aleatorio simple<br/>
+	<input type="radio" name="8" value="-1">selecciona una submuestra de cada estrato con el método muestreo por cuota<br/>
+	<input type="radio" name="8" value="-1">selecciona una submuestra de cada estrato con el método muestreo por conveniencia<br/>
+	<input type="radio" name="8" value="-1">Todas las opociones son correctas</fieldset><br/>
+        
+        
+        <fieldset>
+            <legend>
+        <label><strong>9- El muestreo por conglomerados es eficiente en el aspecto económico ya que</strong></label></legend>
+        
+        <input type="radio" name="9" value="-1">la unidad de muestreo primaria es el elemento individual y no un grupo númeroso de elementos<br/>
+	<input type="radio" name="9" value="-1">la unidad de muestreo primaria no es el elemento individual sino un grupo reducido de elementos<br/>
+	<input type="radio" name="9" value="2">la unidad de muestreo primaria no es el elemento individual sino un grupo númeroso de elementos<br/>
+	<input type="radio" name="9" value="-1">La segunda y tercera opción son correctas</fieldset><br/>
+        
+        
+        <fieldset>
+            <legend>
+        <label><strong>10- El muestreo polietápico por zonas consiste en</strong></label></legend>
+        
+
+        <input type="radio" name="10" value="2">la combinación de técnicas probabilísticas, para la selección de áreas geográficas en unidades cada vez más pequeñas<br/>
+	<input type="radio" name="10" value="-1">la combinación de técnicas no probabilísticas, para la selección de áreas geográficas en unidades cada vez más pequeñas<br/>
+	<input type="radio" name="10" value="-1">la combinación de técnicas probabilísticas, para la selección de áreas geográficas en unidades cada vez más amplias<br/>
+	<input type="radio" name="10" value="-1">la combinación de técnicas no probabilísticas, para la selección de áreas geográficas en unidades cada vez más amplias</fieldset><br/>
+ 
+        
+        
+        <center><input type="submit" value="Enviar autoevaluación" /></center>
+        <br/><br/>
+        
+</FORM>
+
+
+</div><!--principal-->
+
