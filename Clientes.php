@@ -3,6 +3,6 @@
 		require TEMPLATE_PATH.'/config.php';
 		
 	
-		echo "clientes";
+		echo "más clientes";
 		
 		?>
